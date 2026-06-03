@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oteller | DiPol Travel AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:
+    radial-gradient(circle at top left,rgba(0,212,255,.20),transparent 35%),
+    radial-gradient(circle at bottom right,rgba(155,92,255,.25),transparent 35%),
+    linear-gradient(rgba(3,8,25,.84),rgba(3,8,25,.97)),
+    url("/static/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+    padding:28px 6%;
+}
+
+.navbar{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 28px;
+    border-radius:26px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(20px);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.menu{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    max-width:950px;
+    margin:55px auto 35px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.16);
+    margin-bottom:18px;
+    font-weight:bold;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.8;
+    opacity:.9;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-top:35px;
+}
+
+.card{
+    overflow:hidden;
+    border-radius:30px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    box-shadow:0 24px 70px rgba(0,0,0,.28);
+    transition:.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,.14);
+}
+
+.card img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    display:block;
+}
+
+.content{
+    padding:24px;
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 13px;
+    border-radius:999px;
+    background:rgba(0,212,255,.16);
+    border:1px solid rgba(0,212,255,.25);
+    font-size:13px;
+    margin-bottom:12px;
+    font-weight:bold;
+}
+
+.card h2{
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.7;
+    opacity:.9;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    margin:15px 0;
+    color:#8be9ff;
+}
+
+.btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding:14px 18px;
+    border-radius:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    background:linear-gradient(90deg,#8b5cff,#00d4ff);
+}
+
+.info{
+    margin-top:38px;
+    padding:26px;
+    border-radius:26px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.14);
+    line-height:1.8;
+}
+
+@media(max-width:1100px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+}
+
+@media(max-width:700px){
+    .page{
+        padding:16px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:16px;
+        padding:22px;
+        text-align:center;
+    }
+
+    .menu{
+        justify-content:center;
+        gap:13px;
+        font-size:14px;
+    }
+
+    .hero{
+        margin:38px auto 25px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="navbar">
+        <div class="logo">DiPol</div>
+        <div class="menu">
+            <a href="/">Keşfet</a>
+            <a href="/tatil-formu">Akıllı Form</a>
+            <a href="/destinasyonlar">Destinasyonlar</a>
+            <a href="/oteller">Oteller</a>
+            <a href="/ucuslar">Ulaşım</a>
+            <a href="/rehber">Rehber</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="badge">🏨 Bütçe ve konuma göre otel önerileri</div>
+        <h1>Otel Önerileri</h1>
+        <p>
+            DiPol Travel AI, seçilen destinasyonun bütçesine, konaklama tipine ve tatil türüne göre
+            otel önerileri oluşturur. Bu sayfa sistemde kullanılan örnek otel kategorilerini gösterir.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Butik Otel">
+            <div class="content">
+                <span class="tag">🌊 Deniz Tatili</span>
+                <h2>Kaş Deniz Manzaralı Butik Otel</h2>
+                <p>Butik otel • Kahvaltı dahil • Sahile yakın</p>
+                <p>Kaş, Fethiye, Datça gibi deniz rotaları için önerilir.</p>
+                <div class="price">₺3.500 - ₺8.000 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Kaş">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Bungalov">
+            <div class="content">
+                <span class="tag">🌿 Doğa Tatili</span>
+                <h2>Sapanca & Ayder Bungalov</h2>
+                <p>Bungalov • Göl/Yayla manzarası • Kahvaltı dahil</p>
+                <p>Doğa, huzur ve hafta sonu kaçamağı isteyenler için uygundur.</p>
+                <div class="price">₺2.500 - ₺7.000 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Sapanca">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="Kapadokya Otel">
+            <div class="content">
+                <span class="tag">🎈 Romantik</span>
+                <h2>Kapadokya Cave Hotel</h2>
+                <p>Mağara otel • Balon manzarası • Kahvaltı dahil</p>
+                <p>Balayı, romantik rota ve kültür tatili için önerilir.</p>
+                <div class="price">₺4.000 - ₺10.000 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Kapadokya">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa" alt="Premium Otel">
+            <div class="content">
+                <span class="tag">✨ Premium</span>
+                <h2>Bodrum Premium Resort</h2>
+                <p>Resort • Premium konaklama • Havuz & beach</p>
+                <p>Lüks yaz tatili, marina ve eğlence rotaları için uygundur.</p>
+                <div class="price">₺6.000 - ₺18.000 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Bodrum">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris Otel">
+            <div class="content">
+                <span class="tag">🗼 Avrupa</span>
+                <h2>Paris City Center Hotel</h2>
+                <p>Şehir oteli • Oda + kahvaltı • Metroya yakın</p>
+                <p>Avrupa şehir gezisi ve kültür rotaları için önerilir.</p>
+                <div class="price">€120 - €400 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Paris">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd" alt="Maldivler Resort">
+            <div class="content">
+                <span class="tag">🏝️ Lüks Balayı</span>
+                <h2>Maldives Water Villa Resort</h2>
+                <p>Su villası • Resort • Her şey dahil</p>
+                <p>Balayı, tropik tatil ve premium deniz tatili için önerilir.</p>
+                <div class="price">$350 - $900 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Maldivler">Bu Rotayı Planla</a>
+            </div>
+        </div>
+                <div class="card">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb" alt="Fethiye Otel">
+            <div class="content">
+                <span class="tag">🌊 Deniz + Doğa</span>
+                <h2>Fethiye Sea View Hotel</h2>
+                <p>Deniz manzaralı otel • Ölüdeniz’e yakın • Kahvaltı dahil</p>
+                <p>Fethiye, Ölüdeniz ve Kelebekler Vadisi rotaları için önerilir.</p>
+                <div class="price">₺4.000 - ₺9.000 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Fethiye">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c" alt="Çeşme Otel">
+            <div class="content">
+                <span class="tag">🌴 Ege Premium</span>
+                <h2>Çeşme Boutique Hotel</h2>
+                <p>Butik otel • Alaçatı’ya yakın • Oda + kahvaltı</p>
+                <p>Çeşme, Alaçatı ve Ilıca Plajı rotaları için uygundur.</p>
+                <div class="price">₺4.500 - ₺11.000 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Çeşme">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791" alt="Marmaris Otel">
+            <div class="content">
+                <span class="tag">⛵ Marina</span>
+                <h2>Marmaris Marina Hotel</h2>
+                <p>Marina oteli • Tekne turlarına yakın • Sahil bölgesi</p>
+                <p>Marmaris, İçmeler ve Turunç rotaları için önerilir.</p>
+                <div class="price">₺3.800 - ₺9.500 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Marmaris">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Dubai Otel">
+            <div class="content">
+                <span class="tag">✨ Lüks Şehir</span>
+                <h2>Dubai Premium Hotel</h2>
+                <p>Premium şehir oteli • Marina bölgesi • Modern konaklama</p>
+                <p>Dubai, çöl safari, alışveriş ve lüks şehir tatili için önerilir.</p>
+                <div class="price">$180 - $600 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Dubai">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198" alt="Roma Otel">
+            <div class="content">
+                <span class="tag">🏛️ Tarih</span>
+                <h2>Roma City Stay</h2>
+                <p>Şehir oteli • Tarihi merkeze yakın • Oda + kahvaltı</p>
+                <p>Roma, Kolezyum, Vatikan ve kültür rotaları için uygundur.</p>
+                <div class="price">€110 - €320 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Roma">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" alt="Bali Otel">
+            <div class="content">
+                <span class="tag">🌺 Tropik</span>
+                <h2>Bali Tropical Stay</h2>
+                <p>Tropik otel • Doğa ve denize yakın • Kahvaltı dahil</p>
+                <p>Bali, Ubud, Uluwatu ve tropik doğa tatili için önerilir.</p>
+                <div class="price">$90 - $280 / gece</div>
+                <a class="btn" href="/hizli-plan?yer=Bali">Bu Rotayı Planla</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="info">
+        <strong>Not:</strong> Bu sayfadaki fiyatlar proje kapsamında tahmini aralıklardır.
+        Sonuç sayfasında sistem; kişi sayısı, gün sayısı, ulaşım tercihi ve konaklama tipine göre
+        toplam ücret, kişi başı ücret ve günlük kişi başı ortalamayı ayrıca hesaplar.
+    </div>
+
+</div>
+
+</body>
+</html>

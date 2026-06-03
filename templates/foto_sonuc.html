@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DiPol Fotoğraf Analizi</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#071226,#0b1f3a,#132b52);
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.baslik{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.baslik h1{
+    font-size:55px;
+}
+
+.kart{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+img{
+    width:100%;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#6dd5ff;
+}
+
+.oneriler{
+    margin-top:20px;
+    line-height:35px;
+    font-size:20px;
+}
+
+a{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    border-radius:15px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(90deg,#7b5cff,#00cfff);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="baslik">
+<h1>📸 DiPol Fotoğraf Analizi</h1>
+<p>Yapay zeka destekli analiz sonucu hazır.</p>
+</div>
+
+<div class="kart">
+
+<img src="{{ fotograf }}">
+
+<h2>🌍 Analiz Sonucu</h2>
+<p>{{ ai_yorum }}</p>
+
+<div class="oneriler">
+<h2>✨ Benzer Tatil Yerleri</h2>
+
+<p>{{ alternatif|safe }}</p>
+</div>
+
+<a href="/">Ana Sayfaya Dön</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

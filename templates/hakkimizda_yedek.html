@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hakkımızda | DiPol</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    color:white;
+
+    background:
+    linear-gradient(rgba(3,8,25,.60),rgba(3,8,25,.88)),
+    url("/static/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+
+    padding:30px 4%;
+}
+
+.navbar{
+
+    height:85px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    border-radius:24px;
+
+    background:rgba(7,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:bold;
+
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.menu{
+
+    display:flex;
+    gap:28px;
+}
+
+.menu a,
+.login{
+
+    color:white;
+    text-decoration:none;
+}
+
+.login{
+
+    padding:13px 24px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.25);
+}
+
+.hero{
+
+    text-align:center;
+
+    margin-top:80px;
+}
+
+.hero h1{
+
+    font-size:78px;
+
+    margin-bottom:25px;
+}
+
+.gradient{
+
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+
+    max-width:950px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:1.8;
+}
+
+.grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+}
+
+.card{
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.card h2{
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
+
+.card p{
+
+    line-height:1.8;
+
+    opacity:.92;
+}
+
+.story{
+
+    margin-top:70px;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.story h2{
+
+    margin-bottom:25px;
+
+    font-size:42px;
+}
+
+.story p{
+
+    line-height:2;
+
+    font-size:20px;
+}
+
+.bottom{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.bottom h2{
+
+    margin-bottom:18px;
+
+    font-size:36px;
+}
+
+.bottom p{
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+@media(max-width:1000px){
+
+.grid{
+
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+
+    font-size:48px;
+}
+
+.menu{
+
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="navbar">
+
+<div class="logo">
+🌍 DiPol
+</div>
+
+<div class="menu">
+
+<a href="/">Keşfet</a>
+<a href="/destinasyonlar">Destinasyonlar</a>
+<a href="/oteller">Otel Önerileri</a>
+<a href="/ucuslar">Ulaşım</a>
+<a href="/rehber">Seyahat Rehberi</a>
+<a href="/hakkimizda">Hakkımızda</a>
+
+</div>
+
+<a href="/giris" class="login">
+Giriş Yap
+</a>
+
+</div>
+
+<section class="hero">
+
+<h1>
+
+<span class="gradient">
+DiPol
+</span>
+
+Hakkımızda
+
+</h1>
+
+<p>
+
+DiPol Travel AI,
+yapay zeka destekli kişiselleştirilmiş
+tatil planlama deneyimi sunan modern bir seyahat platformudur.
+
+</p>
+
+</section>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">
+🤖
+</div>
+
+<h2>
+Yapay Zeka Teknolojisi
+</h2>
+
+<p>
+
+Gelişmiş AI sistemi sayesinde kullanıcı tercihlerini analiz ederek
+kişiye özel seyahat önerileri oluşturuyoruz.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+🌍
+</div>
+
+<h2>
+Global Seyahat Deneyimi
+</h2>
+
+<p>
+
+Türkiye ve dünya genelindeki popüler rotaları,
+otelleri ve deneyimleri tek platformda sunuyoruz.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+✨
+</div>
+
+<h2>
+Kişiselleştirilmiş Tatiller
+</h2>
+
+<p>
+
+Her kullanıcının tatil anlayışı farklıdır.
+Bu yüzden her öneri size özel hazırlanır.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="story">
+
+<h2>
+🚀 Hikayemiz
+</h2>
+
+<p>
+
+DiPol Travel AI;
+seyahat planlama sürecini daha hızlı,
+daha akıllı ve daha kişisel hale getirmek amacıyla geliştirildi.
+
+Amacımız,
+kullanıcıların saatlerce araştırma yapmak yerine
+tek platform üzerinden yapay zeka destekli
+en uygun tatil önerilerine ulaşabilmesini sağlamaktır.
+
+Modern tasarım,
+kişiselleştirilmiş öneriler,
+akıllı rota sistemi ve gelecekte eklenecek
+canlı hava durumu,
+uçuş analizi,
+AI sohbet sistemi gibi özelliklerle
+seyahat deneyimini yeniden tasarlıyoruz.
+
+</p>
+
+</div>
+
+<div class="bottom">
+
+<h2>
+💡 Vizyonumuz
+</h2>
+
+<p>
+
+<div style="margin-top:40px; display:flex; justify-content:center;">
+
+<div style="
+background:rgba(255,255,255,.08);
+padding:25px 35px;
+border-radius:24px;
+border:1px solid rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+text-align:center;
+max-width:420px;
+width:100%;
+">
+
+<div style="
+font-size:18px;
+opacity:.8;
+margin-bottom:10px;
+">
+Kurucu & Geliştirici
+</div>
+
+<div style="
+font-size:34px;
+font-weight:bold;
+background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+-webkit-background-clip:text;
+color:transparent;
+">
+Dilara Polat
+</div>
+
+<div style="
+margin-top:12px;
+opacity:.75;
+line-height:1.7;
+">
+DiPol Travel AI projesinin kurucusu ve geliştiricisi.
+</div>
+
+</div>
+
+</div>
+
+DiPol’un hedefi;
+yapay zekayı kullanarak
+seyahat planlamayı herkes için
+kolay, hızlı ve keyifli hale getirmektir.
+
+</p>
+
+</div>
+
+</div>
+<div class="bottom">
+
+<h2>
+🚀 Sürekli Gelişim, Daha İyi Bir Deneyim
+</h2>
+
+<p>
+DiPol Travel AI, kullanıcı geri bildirimleriyle sürekli gelişen ve yenilenen bir platformdur.
+Her geçen gün daha akıllı, daha hızlı ve daha kapsamlı özelliklerle seyahat deneyimini daha iyi hale getirmeyi hedefler.
+</p>
+
+<br>
+
+<p>
+<strong>
+Bugün iyi, yarın daha iyi.
+</strong>
+</p>
+
+</div>
+
+</body>
+</html>

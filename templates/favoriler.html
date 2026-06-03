@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorilerim - DiPol Travel AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:
+    radial-gradient(circle at top left, rgba(0,212,255,.22), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(155,92,255,.25), transparent 35%),
+    linear-gradient(rgba(3,8,25,.78),rgba(3,8,25,.96)),
+    url("/static/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+    padding:42px 6%;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:34px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:12px;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:.86;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    padding:24px;
+    border-radius:28px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(18px);
+    box-shadow:0 22px 60px rgba(0,0,0,.28);
+}
+
+.card h2{
+    font-size:26px;
+    margin-bottom:14px;
+}
+
+.card p{
+    line-height:1.8;
+    opacity:.92;
+}
+
+.actions{
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 16px;
+    border-radius:15px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.16);
+    cursor:pointer;
+}
+
+.btn.primary{
+    background:linear-gradient(90deg,#8b5cff,#00d4ff);
+    border:none;
+}
+
+.empty{
+    max-width:700px;
+    margin:0 auto;
+    padding:30px;
+    border-radius:28px;
+    text-align:center;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.16);
+}
+
+.top-actions{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+@media(max-width:1000px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="hero">
+        <h1>⭐ Favorilerim</h1>
+        <p>Kaydettiğin tatil planlarını burada görebilirsin.</p>
+    </div>
+
+    <div id="favorilerAlani" class="grid"></div>
+
+    <div id="bosAlan" class="empty" style="display:none;">
+        <h2>Henüz favori plan yok</h2>
+        <p>Bir tatil planı oluşturup “Favorilere Ekle” butonuna basınca burada görünecek.</p>
+    </div>
+
+    <div class="top-actions">
+        <a class="btn primary" href="/destinasyonlar">Yeni Plan Oluştur</a>
+        <button class="btn" onclick="tumFavorileriSil()">Favorileri Temizle</button>
+        <a class="btn" href="/">Ana Sayfa</a>
+    </div>
+
+</div>
+
+<script>
+function favorileriGoster(){
+    const alan = document.getElementById("favorilerAlani");
+    const bosAlan = document.getElementById("bosAlan");
+
+    let favoriler = JSON.parse(localStorage.getItem("dipol_favoriler")) || [];
+
+    alan.innerHTML = "";
+
+    if(favoriler.length === 0){
+        bosAlan.style.display = "block";
+        alan.style.display = "none";
+        return;
+    }
+
+    bosAlan.style.display = "none";
+    alan.style.display = "grid";
+
+    favoriler.forEach((plan, index) => {
+        alan.innerHTML += `
+            <div class="card">
+                <h2>🌍 ${plan.yer}</h2>
+                <p>💰 ${plan.fiyat}</p>
+                <p>🚗 ${plan.ulasim}</p>
+                <p>🌤️ ${plan.hava}</p>
+                <p>📅 Kaydedilme: ${plan.tarih}</p>
+
+                <div class="actions">
+                    <a class="btn primary" href="https://www.google.com/maps/search/${plan.yer}" target="_blank">
+                        Haritada Gör
+                    </a>
+
+                    <button class="btn" onclick="favoriSil(${index})">
+                        Sil
+                    </button>
+                </div>
+            </div>
+        `;
+    });
+}
+
+function favoriSil(index){
+    let favoriler = JSON.parse(localStorage.getItem("dipol_favoriler")) || [];
+    favoriler.splice(index, 1);
+    localStorage.setItem("dipol_favoriler", JSON.stringify(favoriler));
+    favorileriGoster();
+}
+
+function tumFavorileriSil(){
+    localStorage.removeItem("dipol_favoriler");
+    favorileriGoster();
+}
+
+favorileriGoster();
+</script>
+
+</body>
+</html>

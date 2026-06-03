@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hakkımızda | DiPol</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    color:white;
+
+    background:
+    linear-gradient(rgba(3,8,25,.60),rgba(3,8,25,.88)),
+    url("/static/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+
+    padding:30px 4%;
+}
+
+.navbar{
+
+    height:85px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    border-radius:24px;
+
+    background:rgba(7,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:bold;
+
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.menu{
+
+    display:flex;
+    gap:28px;
+}
+
+.menu a,
+.login{
+
+    color:white;
+    text-decoration:none;
+}
+
+.login{
+
+    padding:13px 24px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.25);
+}
+
+.hero{
+
+    text-align:center;
+
+    margin-top:80px;
+}
+
+.hero h1{
+
+    font-size:78px;
+
+    margin-bottom:25px;
+}
+
+.gradient{
+
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+
+    max-width:950px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:1.8;
+}
+
+.grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+}
+
+.card{
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.card h2{
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
+
+.card p{
+
+    line-height:1.8;
+
+    opacity:.92;
+}
+
+.story{
+
+    margin-top:70px;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.story h2{
+
+    margin-bottom:25px;
+
+    font-size:42px;
+}
+
+.story p{
+
+    line-height:2;
+
+    font-size:20px;
+}
+
+.bottom{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.bottom h2{
+
+    margin-bottom:18px;
+
+    font-size:36px;
+}
+
+.bottom p{
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+@media(max-width:1000px){
+
+.grid{
+
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+
+    font-size:48px;
+}
+
+.menu{
+
+    display:none;
+}
+
+}
+.gelisim-kart{
+    margin-top:80px;
+    padding:55px;
+    border-radius:36px;
+    background:
+        linear-gradient(135deg,rgba(0,212,255,.13),rgba(155,92,255,.12),rgba(255,105,214,.10)),
+        rgba(6,12,35,.72);
+    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(22px);
+    text-align:center;
+    box-shadow:0 25px 80px rgba(0,0,0,.45);
+    position:relative;
+    overflow:hidden;
+}
+
+.gelisim-kart::before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    top:-120px;
+    right:-100px;
+    background:radial-gradient(circle,rgba(0,212,255,.35),transparent 65%);
+}
+
+.gelisim-kart::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    bottom:-150px;
+    left:-120px;
+    background:radial-gradient(circle,rgba(255,105,214,.28),transparent 65%);
+}
+
+.gelisim-kart h2,
+.gelisim-kart p,
+.gelisim-grid,
+.gelisim-alt{
+    position:relative;
+    z-index:2;
+}
+
+.gelisim-kart h2{
+    font-size:50px;
+    margin-bottom:22px;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.gelisim-kart p{
+    max-width:950px;
+    margin:auto;
+    line-height:1.9;
+    font-size:21px;
+    opacity:.94;
+}
+
+.gelisim-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+}
+
+.mini-kart{
+    padding:32px;
+    border-radius:28px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+    box-shadow:0 18px 45px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.mini-kart:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.12);
+}
+
+.mini-icon{
+    font-size:52px;
+    margin-bottom:18px;
+}
+
+.mini-kart h3{
+    margin-bottom:14px;
+    font-size:25px;
+}
+
+.mini-kart p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.gelisim-alt{
+    margin-top:42px;
+    padding:22px;
+    border-radius:22px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    font-size:20px;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+    .gelisim-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gelisim-kart{
+        padding:35px 22px;
+    }
+
+    .gelisim-kart h2{
+        font-size:34px;
+    }
+}
+
+.vision-premium{
+
+    margin-top:70px;
+
+    padding:55px;
+
+    border-radius:36px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(0,212,255,.10),
+    rgba(155,92,255,.12),
+    rgba(255,105,214,.10)
+    );
+
+    border:1px solid rgba(255,255,255,.16);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 25px 80px rgba(0,0,0,.45);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.vision-premium::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    top:-120px;
+    right:-120px;
+
+    background:
+    radial-gradient(
+    circle,
+    rgba(0,212,255,.30),
+    transparent 65%
+    );
+}
+
+.vision-premium::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    bottom:-150px;
+    left:-120px;
+
+    background:
+    radial-gradient(
+    circle,
+    rgba(255,105,214,.25),
+    transparent 65%
+    );
+}
+
+.vision-premium h2,
+.vision-text,
+.founder-card{
+
+    position:relative;
+    z-index:2;
+}
+
+.vision-premium h2{
+
+    font-size:52px;
+
+    margin-bottom:40px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #00d4ff,
+    #9b5cff,
+    #ff69d6
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+}
+
+.founder-card{
+
+    max-width:520px;
+
+    margin:0 auto 35px;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.16);
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 18px 50px rgba(0,0,0,.28);
+}
+
+.founder-badge{
+
+    font-size:18px;
+
+    opacity:.78;
+
+    margin-bottom:14px;
+}
+
+.founder-card h3{
+
+    font-size:44px;
+
+    margin-bottom:14px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #00d4ff,
+    #9b5cff,
+    #ff69d6
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+}
+
+.founder-card p{
+
+    line-height:1.8;
+
+    opacity:.88;
+}
+
+.vision-text{
+
+    max-width:950px;
+
+    margin:auto;
+
+    font-size:21px;
+
+    line-height:2;
+
+    opacity:.94;
+}
+
+@media(max-width:900px){
+
+.vision-premium{
+
+    padding:35px 24px;
+}
+
+.vision-premium h2{
+
+    font-size:36px;
+}
+
+.founder-card h3{
+
+    font-size:34px;
+}
+
+.vision-text{
+
+    font-size:18px;
+}
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="navbar">
+
+<div class="logo">
+🌍 DiPol
+</div>
+
+<div class="menu">
+
+<a href="/">Keşfet</a>
+<a href="/destinasyonlar">Destinasyonlar</a>
+<a href="/oteller">Otel Önerileri</a>
+<a href="/ucuslar">Ulaşım</a>
+<a href="/rehber">Seyahat Rehberi</a>
+<a href="/hakkimizda">Hakkımızda</a>
+
+</div>
+
+<a href="/giris" class="login">
+Giriş Yap
+</a>
+
+</div>
+
+<section class="hero">
+
+<h1>
+
+<span class="gradient">
+DiPol
+</span>
+
+Hakkımızda
+
+</h1>
+
+<p>
+
+DiPol Travel AI,
+yapay zeka destekli kişiselleştirilmiş
+tatil planlama deneyimi sunan modern bir seyahat platformudur.
+
+</p>
+
+</section>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">
+🤖
+</div>
+
+<h2>
+Yapay Zeka Teknolojisi
+</h2>
+
+<p>
+
+Gelişmiş AI sistemi sayesinde kullanıcı tercihlerini analiz ederek
+kişiye özel seyahat önerileri oluşturuyoruz.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+🌍
+</div>
+
+<h2>
+Global Seyahat Deneyimi
+</h2>
+
+<p>
+
+Türkiye ve dünya genelindeki popüler rotaları,
+otelleri ve deneyimleri tek platformda sunuyoruz.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+✨
+</div>
+
+<h2>
+Kişiselleştirilmiş Tatiller
+</h2>
+
+<p>
+
+Her kullanıcının tatil anlayışı farklıdır.
+Bu yüzden her öneri size özel hazırlanır.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="story">
+
+<h2>
+🚀 Hikayemiz
+</h2>
+
+<p>
+
+DiPol Travel AI;
+seyahat planlama sürecini daha hızlı,
+daha akıllı ve daha kişisel hale getirmek amacıyla geliştirildi.
+
+Amacımız,
+kullanıcıların saatlerce araştırma yapmak yerine
+tek platform üzerinden yapay zeka destekli
+en uygun tatil önerilerine ulaşabilmesini sağlamaktır.
+
+Modern tasarım,
+kişiselleştirilmiş öneriler,
+akıllı rota sistemi ve gelecekte eklenecek
+canlı hava durumu,
+uçuş analizi,
+AI sohbet sistemi gibi özelliklerle
+seyahat deneyimini yeniden tasarlıyoruz.
+
+</p>
+
+</div>
+
+<div class="vision-premium">
+
+<h2>
+💡 Vizyonumuz
+</h2>
+
+<div class="founder-card">
+
+<div class="founder-badge">
+Kurucu & Geliştirici
+</div>
+
+<h3>
+Dilara Polat
+</h3>
+
+<p>
+DiPol Travel AI projesinin kurucusu ve geliştiricisi.
+</p>
+
+</div>
+
+<p class="vision-text">
+
+DiPol’un hedefi;
+yapay zekayı kullanarak seyahat planlamayı herkes için
+kolay, hızlı ve keyifli hale getirmektir.
+
+DiPol sürekli gelişen,
+yenilikçi ve kullanıcı odaklı bir platformdur.
+
+Her geçen gün yeni özelliklerle
+daha güçlü hale gelmektedir.
+
+</p>
+
+</div>
+
+
+
+<div class="bottom">
+
+<h2>
+🚀 Sürekli Gelişim, Daha İyi Bir Deneyim
+</h2>
+
+<p>
+DiPol Travel AI, kullanıcı geri bildirimleriyle sürekli gelişen ve yenilenen bir platformdur.
+Her geçen gün daha akıllı, daha hızlı ve daha kapsamlı özelliklerle seyahat deneyimini daha iyi hale getirmeyi hedefler.
+</p>
+
+<br>
+
+<p>
+<strong>
+Bugün iyi, yarın daha iyi.
+</strong>
+</p>
+
+</div>
+<!-- GELISIM KARTI BURAYA GELECEK -->
+ <div class="gelisim-kart">
+
+<h2>
+✨ Her Geçen Gün Daha Güçlü, Daha İyi!
+</h2>
+
+<p>
+
+DiPol, sürekli gelişen bir platformdur.
+Kullanıcı geri bildirimleri ve teknolojik yeniliklerle
+her gün daha iyi bir deneyim sunmak için çalışıyoruz.
+
+</p>
+
+<div class="gelisim-grid">
+
+<div class="mini-kart">
+<div class="mini-icon">🚀</div>
+<h3>Sürekli Gelişim</h3>
+<p>
+Yeni özellikler ve iyileştirmeler ile platformumuzu her gün geliştiriyoruz.
+</p>
+</div>
+
+<div class="mini-kart">
+<div class="mini-icon">💡</div>
+<h3>Kullanıcı Odaklı</h3>
+<p>
+Geri bildirimlerinizi dikkate alarak sistemi sürekli yeniliyoruz.
+</p>
+</div>
+
+<div class="mini-kart">
+<div class="mini-icon">🛡️</div>
+<h3>Güven & Kalite</h3>
+<p>
+Daha güvenli ve kaliteli öneriler için sistemi geliştiriyoruz.
+</p>
+</div>
+
+</div>
+
+<div class="gelisim-alt">
+
+💖 Gelişmeye açık, yenilikçi ve her gün daha güçlü bir DiPol için çalışıyoruz.
+
+</div>
+
+</div>
+
+</body>
+</html>

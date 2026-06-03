@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DiPol Travel AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:
+    radial-gradient(circle at top left, rgba(0,212,255,.22), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(155,92,255,.24), transparent 34%),
+    linear-gradient(rgba(3,8,25,.58),rgba(3,8,25,.88)),
+    url("/static/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+    padding:30px 4%;
+}
+
+.navbar{
+    min-height:85px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:0 30px;
+    border-radius:24px;
+    background:rgba(7,12,35,.65);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(20px);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+    white-space:nowrap;
+}
+
+.menu{
+    display:flex;
+    gap:24px;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.menu a,
+.login{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    opacity:.92;
+}
+
+.menu a:hover,
+.login:hover{
+    opacity:1;
+}
+
+.login{
+    padding:13px 24px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.25);
+    white-space:nowrap;
+}
+
+.hero{
+    margin-top:65px;
+    display:grid;
+    grid-template-columns:1.05fr 1fr;
+    gap:42px;
+    align-items:center;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 16px;
+    border-radius:999px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.14);
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+h1{
+    font-size:82px;
+    line-height:.96;
+    margin:18px 0;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.desc{
+    font-size:21px;
+    line-height:1.7;
+    max-width:650px;
+    opacity:.92;
+}
+
+.info-row,
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+.info{
+    padding:14px 20px;
+    border-radius:18px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.10);
+}
+
+.btn{
+    display:inline-block;
+    padding:17px 30px;
+    border-radius:22px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    background:linear-gradient(90deg,#8b4dff,#00d4ff);
+    box-shadow:0 16px 35px rgba(0,212,255,.15);
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn.dark{
+    background:rgba(0,0,0,.25);
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:none;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+}
+
+.card{
+    min-height:360px;
+    padding:32px;
+    border-radius:30px;
+    background:rgba(6,12,35,.62);
+    border:1px solid rgba(0,212,255,.25);
+    text-align:center;
+    backdrop-filter:blur(20px);
+    box-shadow:0 24px 70px rgba(0,0,0,.25);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(0,212,255,.55);
+}
+
+.card.featured{
+    grid-column:1/3;
+    min-height:auto;
+    text-align:left;
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:22px;
+    align-items:center;
+}
+
+.icon{
+    font-size:58px;
+    margin-bottom:22px;
+}
+
+.card.featured .icon{
+    margin-bottom:0;
+}
+
+.card h2{
+    font-size:28px;
+    margin-bottom:14px;
+}
+
+.card p{
+    line-height:1.8;
+    opacity:.9;
+}
+
+.card .mini{
+    display:inline-block;
+    margin-top:14px;
+    padding:8px 13px;
+    border-radius:999px;
+    background:rgba(255,255,255,.10);
+    font-size:13px;
+}
+
+.photo-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.photo-card::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    background:
+    radial-gradient(circle at top, rgba(0,212,255,.20), transparent 48%),
+    radial-gradient(circle at bottom, rgba(255,105,214,.14), transparent 46%);
+    pointer-events:none;
+}
+
+.photo-card > *{
+    position:relative;
+    z-index:1;
+}
+
+.photo-preview{
+    margin:18px auto 20px;
+    width:100%;
+    max-width:280px;
+    height:120px;
+    border-radius:22px;
+    background:rgba(255,255,255,.10);
+    border:1px dashed rgba(255,255,255,.28);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:rgba(255,255,255,.82);
+    font-weight:bold;
+}
+
+.bottom{
+    margin-top:34px;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    background:rgba(5,12,35,.65);
+    border-radius:28px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.bottom a{
+    text-align:center;
+    padding:25px 14px;
+    border-right:1px solid rgba(255,255,255,.12);
+    color:white;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.bottom a:hover{
+    background:rgba(255,255,255,.08);
+}
+
+.bottom a:last-child{
+    border-right:none;
+}
+
+.bottom span{
+    font-size:34px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.floating-fav{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    z-index:999;
+}
+
+.floating-fav a{
+    display:inline-block;
+    padding:15px 22px;
+    border-radius:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    background:linear-gradient(90deg,#8b5cff,#00d4ff);
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+@media(max-width:1100px){
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .desc{
+        margin:0 auto;
+    }
+
+    .info-row,
+    .buttons{
+        justify-content:center;
+    }
+}
+
+@media(max-width:900px){
+    .navbar{
+        height:auto;
+        padding:22px;
+    }
+
+    .menu{
+        display:none;
+    }
+
+    .cards,
+    .bottom{
+        grid-template-columns:1fr;
+    }
+
+    .card.featured{
+        grid-column:1;
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    .floating-fav{
+        right:16px;
+        bottom:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="navbar">
+        <div class="logo">🌍 DiPol</div>
+
+        <div class="menu">
+            <a href="/">Keşfet</a>
+            <a href="/tatil-formu">Akıllı Form</a>
+            <a href="/destinasyonlar">Destinasyonlar</a>
+            <a href="/favoriler">⭐ Favorilerim</a>
+            <a href="/oteller">Otel Önerileri</a>
+            <a href="/ucuslar">Ulaşım</a>
+            <a href="/rehber">Seyahat Rehberi</a>
+            <a href="/hakkimizda">Hakkımızda</a>
+        </div>
+
+        <a href="/giris" class="login">Giriş Yap</a>
+    </div>
+
+    <section class="hero">
+
+        <div>
+            <div class="hero-tag">✦ AI POWERED TRAVEL EXPERIENCE</div>
+
+            <h1><span class="gradient">DiPol</span><br>Tatil Asistanı</h1>
+
+            <p class="desc">
+                Önce tercihlerini soran akıllı form ile sana uygun tatil rotasını bul,
+                sonra istersen destinasyon seçerek detaylı otel, rota, bütçe ve gezi planı oluştur.
+            </p>
+
+            <div class="info-row">
+                <div class="info">🧠 Akıllı Soru Formu</div>
+                <div class="info">🏨 Otel & Rota Önerisi</div>
+                <div class="info">📸 Fotoğraftan Konum</div>
+            </div>
+
+            <div class="buttons">
+                <a href="/tatil-formu" class="btn">Akıllı Tatil Formu →</a>
+                <a href="/destinasyonlar" class="btn dark">Destinasyon Seçerek Planla</a>
+                <a href="/rehber" class="btn dark">Nasıl Çalışır?</a>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card featured">
+                <div class="icon">🧠</div>
+                <div>
+                    <h2>Akıllı Tatil Öneri Formu</h2>
+                    <p>
+                        Bütçe, tatil türü, süre, kişi sayısı ve beklentilerine göre sana en uygun
+                        şehir, otel ve tatil önerisini oluşturur.
+                    </p>
+                    <span class="mini">İlk yaptığımız ana soru sistemi</span>
+                </div>
+                <a href="/tatil-formu" class="btn">Formu Aç →</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏝️</div>
+                <h2>Destinasyon Seçerek Planla</h2>
+                <p>
+                    Kaş, Ayder, Mardin, Kapadokya, Paris ve Maldivler için özel rota,
+                    günlük plan, otel ve bütçe analizi hazırlar.
+                </p>
+                <br>
+                <a href="/destinasyonlar" class="btn">Destinasyonları Aç →</a>
+            </div>
+
+            <div class="card photo-card">
+                <div class="icon">📸</div>
+                <h2>Fotoğraftan Konum Tahmini</h2>
+                <p>
+                    Tatil fotoğrafı yükleyerek benzer atmosferdeki yerleri keşfet.
+                    Bu alan fotoğrafla rota keşfi için özel olarak ayrıldı.
+                </p>
+                <div class="photo-preview">☁ Fotoğraf yükleme alanı</div>
+                <a href="/foto-konum" class="btn">Fotoğraf Yükle →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="bottom">
+        <a href="/ucuslar"><span>✈️</span><strong>Ulaşım</strong></a>
+        <a href="/oteller"><span>🏨</span><strong>Oteller</strong></a>
+        <a href="/destinasyonlar"><span>📍</span><strong>Rota Planlama</strong></a>
+        <a href="/rehber"><span>🧳</span><strong>Seyahat Rehberi</strong></a>
+        <a href="/favoriler"><span>⭐</span><strong>Favoriler</strong></a>
+    </div>
+
+</div>
+
+<div class="floating-fav">
+    <a href="/favoriler">⭐ Favorilerim</a>
+</div>
+
+</body>
+</html>

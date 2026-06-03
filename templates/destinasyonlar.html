@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinasyonlar | DiPol Travel AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:
+    radial-gradient(circle at top left,rgba(0,212,255,.20),transparent 34%),
+    radial-gradient(circle at bottom right,rgba(155,92,255,.22),transparent 35%),
+    linear-gradient(rgba(4,8,25,.84),rgba(4,8,25,.97)),
+    url("/static/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+    padding:28px 6%;
+}
+
+.navbar{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 28px;
+    border-radius:26px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(20px);
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:900;
+    letter-spacing:1px;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.menu{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    opacity:.9;
+}
+
+.menu a:hover{
+    opacity:1;
+}
+
+.hero{
+    text-align:center;
+    max-width:980px;
+    margin:58px auto 32px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.16);
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:.9;
+    line-height:1.8;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin:32px auto 26px;
+    max-width:1050px;
+}
+
+.stat{
+    padding:20px;
+    border-radius:24px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.14);
+    text-align:center;
+    backdrop-filter:blur(16px);
+}
+
+.stat h3{
+    font-size:28px;
+    margin-bottom:6px;
+}
+
+.stat p{
+    opacity:.82;
+    font-weight:bold;
+}
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:34px 0 22px;
+}
+
+.filter-btn{
+    border:none;
+    cursor:pointer;
+    color:white;
+    padding:12px 18px;
+    border-radius:999px;
+    font-weight:bold;
+    background:rgba(255,255,255,.11);
+    border:1px solid rgba(255,255,255,.16);
+}
+
+.filter-btn.active{
+    background:linear-gradient(90deg,#8b5cff,#00d4ff);
+    border:none;
+}
+
+.section-title{
+    margin:32px 0 16px;
+    font-size:28px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    min-height:260px;
+    padding:26px;
+    border-radius:30px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    box-shadow:0 24px 70px rgba(0,0,0,.28);
+    transition:.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,.14);
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 13px;
+    border-radius:999px;
+    background:rgba(0,212,255,.16);
+    border:1px solid rgba(0,212,255,.24);
+    font-size:13px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.card h2{
+    font-size:27px;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:1.7;
+    opacity:.9;
+    margin-bottom:16px;
+}
+
+.meta{
+    display:flex;
+    gap:9px;
+    flex-wrap:wrap;
+    margin:14px 0 18px;
+}
+
+.meta span{
+    padding:8px 10px;
+    border-radius:12px;
+    background:rgba(0,0,0,.22);
+    font-size:13px;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding:14px 18px;
+    border-radius:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    background:linear-gradient(90deg,#8b5cff,#00d4ff);
+}
+
+.note{
+    margin-top:36px;
+    padding:26px;
+    border-radius:26px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.14);
+    line-height:1.8;
+    opacity:.95;
+}
+
+@media(max-width:1100px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+}
+
+@media(max-width:700px){
+    .page{
+        padding:16px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:16px;
+        padding:22px;
+        text-align:center;
+    }
+
+    .menu{
+        justify-content:center;
+        gap:13px;
+        font-size:14px;
+    }
+
+    .hero{
+        margin:38px auto 22px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .stats,
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        min-height:auto;
+    }
+
+    .section-title{
+        font-size:23px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="navbar">
+        <div class="logo">DiPol</div>
+        <div class="menu">
+            <a href="/">Keşfet</a>
+            <a href="/tatil-formu">Akıllı Form</a>
+            <a href="/destinasyonlar">Destinasyonlar</a>
+            <a href="/foto-konum">Foto Konum</a>
+            <a href="/favoriler">⭐ Favorilerim</a>
+            <a href="/rehber">Rehber</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="badge">🌍 Türkiye + Yurt Dışı Akıllı Rota Havuzu</div>
+        <h1>Destinasyonlar</h1>
+        <p>
+            Deniz, doğa, kültür, lüks, balayı ve şehir tatili için hazırlanmış rota havuzu.
+            Seçtiğin destinasyona göre sistem bütçe, kişi başı ücret, otel, rota ve canlı hava verisiyle plan oluşturur.
+        </p>
+    </div>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>81</h3>
+            <p>Türkiye il desteği</p>
+        </div>
+        <div class="stat">
+            <h3>30+</h3>
+            <p>Popüler rota</p>
+        </div>
+        <div class="stat">
+            <h3>Canlı</h3>
+            <p>Hava + döviz verisi</p>
+        </div>
+        <div class="stat">
+            <h3>AI</h3>
+            <p>Bütçe analizi</p>
+        </div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterCards('all')">Tümü</button>
+        <button class="filter-btn" onclick="filterCards('deniz')">Deniz</button>
+        <button class="filter-btn" onclick="filterCards('doga')">Doğa</button>
+        <button class="filter-btn" onclick="filterCards('kultur')">Kültür</button>
+        <button class="filter-btn" onclick="filterCards('lux')">Lüks</button>
+        <button class="filter-btn" onclick="filterCards('yurtdisi')">Yurt Dışı</button>
+    </div>
+
+    <h2 class="section-title">🇹🇷 Türkiye Popüler Rotalar</h2>
+
+    <div class="grid">
+
+        <div class="card" data-category="deniz doga">
+            <div class="tag">🌊 Deniz + Doğa</div>
+            <h2>Kaş</h2>
+            <p>Tekne turu, Kaputaş, sakin sokaklar ve berrak deniz isteyenler için güçlü rota.</p>
+            <div class="meta"><span>₺</span><span>Canlı Hava</span><span>Kişi Başı</span></div>
+            <a class="btn" href="/hizli-plan?yer=Kaş">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz lux">
+            <div class="tag">✨ Lüks Yaz</div>
+            <h2>Bodrum</h2>
+            <p>Marina, beach club, gece hayatı ve premium otel seçenekleriyle yaz rotası.</p>
+            <div class="meta"><span>₺</span><span>Premium</span><span>Otel</span></div>
+            <a class="btn" href="/hizli-plan?yer=Bodrum">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz doga">
+            <div class="tag">🪂 Macera</div>
+            <h2>Fethiye</h2>
+            <p>Ölüdeniz, Kelebekler Vadisi ve yamaç paraşütüyle doğa + deniz tatili.</p>
+            <div class="meta"><span>₺</span><span>Macera</span><span>Plaj</span></div>
+            <a class="btn" href="/hizli-plan?yer=Fethiye">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz">
+            <div class="tag">⛵ Tekne Rotası</div>
+            <h2>Marmaris</h2>
+            <p>Marina, İçmeler, tekne turları ve hareketli yaz tatili için uygun.</p>
+            <div class="meta"><span>₺</span><span>Tekne</span><span>Eğlence</span></div>
+            <a class="btn" href="/hizli-plan?yer=Marmaris">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz lux">
+            <div class="tag">🌴 Premium Sahil</div>
+            <h2>Çeşme</h2>
+            <p>Alaçatı, Ilıca, marina ve yaz eğlencesi isteyenler için premium rota.</p>
+            <div class="meta"><span>₺</span><span>Alaçatı</span><span>Plaj</span></div>
+            <a class="btn" href="/hizli-plan?yer=Çeşme">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz doga">
+            <div class="tag">🧿 Sakin Tatil</div>
+            <h2>Datça</h2>
+            <p>Kalabalıktan uzak, doğal koylar ve sakin sahil tatili isteyenler için.</p>
+            <div class="meta"><span>₺</span><span>Sakin</span><span>Doğa</span></div>
+            <a class="btn" href="/hizli-plan?yer=Datça">Planla</a>
+        </div>
+
+        <div class="card" data-category="kultur">
+            <div class="tag">🎈 Romantik Kültür</div>
+            <h2>Kapadokya</h2>
+            <p>Balon manzarası, mağara oteller ve romantik atmosfer isteyenler için.</p>
+            <div class="meta"><span>₺</span><span>Balayı</span><span>Rota</span></div>
+            <a class="btn" href="/hizli-plan?yer=Kapadokya">Planla</a>
+        </div>
+
+        <div class="card" data-category="kultur">
+            <div class="tag">🕌 Tarih</div>
+            <h2>Mardin</h2>
+            <p>Taş sokaklar, tarihi konaklar ve otantik kültür tatili için öne çıkar.</p>
+            <div class="meta"><span>₺</span><span>Kültür</span><span>Tarih</span></div>
+            <a class="btn" href="/hizli-plan?yer=Mardin">Planla</a>
+        </div>
+
+        <div class="card" data-category="doga">
+            <div class="tag">🌿 Yayla</div>
+            <h2>Ayder Yaylası</h2>
+            <p>Yayla, bungalov, Fırtına Deresi ve doğa yürüyüşü isteyenlere uygun.</p>
+            <div class="meta"><span>₺</span><span>Bungalov</span><span>Doğa</span></div>
+            <a class="btn" href="/hizli-plan?yer=Ayder Yaylası">Planla</a>
+        </div>
+
+        <div class="card" data-category="doga">
+            <div class="tag">🏡 Hafta Sonu</div>
+            <h2>Sapanca</h2>
+            <p>Göl manzarası, bungalov ve kısa kaçamak planları için çok uygun.</p>
+            <div class="meta"><span>₺</span><span>Bungalov</span><span>Göl</span></div>
+            <a class="btn" href="/hizli-plan?yer=Sapanca">Planla</a>
+        </div>
+
+        <div class="card" data-category="doga">
+            <div class="tag">🌲 Göl Manzarası</div>
+            <h2>Abant</h2>
+            <p>Doğa, göl yürüyüşü, sakinlik ve kış rotası isteyenler için uygun.</p>
+            <div class="meta"><span>₺</span><span>Doğa</span><span>Sakin</span></div>
+            <a class="btn" href="/hizli-plan?yer=Abant">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz kultur">
+            <div class="tag">🐚 Karadeniz Sahili</div>
+            <h2>Amasra</h2>
+            <p>Manzara, sahil, balık restoranları ve sakin hafta sonu tatili için.</p>
+            <div class="meta"><span>₺</span><span>Sahil</span><span>Kültür</span></div>
+            <a class="btn" href="/hizli-plan?yer=Amasra">Planla</a>
+        </div>
+
+        <div class="card" data-category="kultur">
+            <div class="tag">🏙️ Şehir</div>
+            <h2>İstanbul</h2>
+            <p>Boğaz, tarihi yarımada, müze, kafe ve kültür dolu şehir tatili.</p>
+            <div class="meta"><span>₺</span><span>Şehir</span><span>Boğaz</span></div>
+            <a class="btn" href="/hizli-plan?yer=İstanbul">Planla</a>
+        </div>
+
+        <div class="card" data-category="deniz kultur">
+            <div class="tag">🌅 Ege</div>
+            <h2>İzmir</h2>
+            <p>Kordon, Alsancak, sahil yaşamı ve yakın yaz rotaları için uygun.</p>
+            <div class="meta"><span>₺</span><span>Ege</span><span>Şehir</span></div>
+            <a class="btn" href="/hizli-plan?yer=İzmir">Planla</a>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">🌍 Yurt Dışı Rotalar</h2>
+
+    <div class="grid">
+
+        <div class="card" data-category="yurtdisi kultur">
+            <div class="tag">🗼 Avrupa</div>
+            <h2>Paris</h2>
+            <p>Sanat, romantik şehir atmosferi, Eyfel ve müze gezileri için ideal.</p>
+            <div class="meta"><span>€</span><span>Vize</span><span>Döviz</span></div>
+            <a class="btn" href="/hizli-plan?yer=Paris">Planla</a>
+        </div>
+
+        <div class="card" data-category="yurtdisi lux deniz">
+            <div class="tag">🏝️ Balayı</div>
+            <h2>Maldivler</h2>
+            <p>Su villası, tropik deniz, resort ve lüks balayı tatili isteyenlere uygun.</p>
+            <div class="meta"><span>$</span><span>Resort</span><span>Premium</span></div>
+            <a class="btn" href="/hizli-plan?yer=Maldivler">Planla</a>
+        </div>
+
+        <div class="card" data-category="yurtdisi kultur">
+            <div class="tag">🏛️ Tarih</div>
+            <h2>Roma</h2>
+            <p>Kolezyum, Vatikan, Trevi Çeşmesi ve Avrupa kültür rotası.</p>
+            <div class="meta"><span>€</span><span>Kültür</span><span>Şehir</span></div>
+            <a class="btn" href="/hizli-plan?yer=Roma">Planla</a>
+        </div>
+
+        <div class="card" data-category="yurtdisi kultur">
+            <div class="tag">🚲 Kanallar</div>
+            <h2>Amsterdam</h2>
+            <p>Kanal turu, müzeler ve Avrupa şehir gezisi için modern rota.</p>
+            <div class="meta"><span>€</span><span>Müze</span><span>Şehir</span></div>
+            <a class="btn" href="/hizli-plan?yer=Amsterdam">Planla</a>
+        </div>
+
+        <div class="card" data-category="yurtdisi lux">
+            <div class="tag">✨ Lüks Şehir</div>
+            <h2>Dubai</h2>
+            <p>Modern şehir, çöl safari, alışveriş ve premium tatil isteyenler için.</p>
+            <div class="meta"><span>$</span><span>Lüks</span><span>Canlı Döviz</span></div>
+            <a class="btn" href="/hizli-plan?yer=Dubai">Planla</a>
+        </div>
+
+        <div class="card" data-category="yurtdisi deniz doga">
+            <div class="tag">🌺 Tropik</div>
+            <h2>Bali</h2>
+            <p>Tropik doğa, tapınaklar, sahiller ve huzurlu tatil isteyenlere uygun.</p>
+            <div class="meta"><span>$</span><span>Doğa</span><span>Deniz</span></div>
+            <a class="btn" href="/hizli-plan?yer=Bali">Planla</a>
+        </div>
+
+    </div>
+
+    <div class="note">
+        <strong>Not:</strong> Bu sayfa popüler rotaları gösterir. Sistem arka planda Türkiye 81 il desteği,
+        yurt dışı destinasyonları, canlı hava durumu, döviz bilgisi ve kişi başı bütçe analiziyle çalışır.
+        Daha detaylı kişisel öneri için “Akıllı Form” sayfasını kullanabilirsin.
+    </div>
+
+</div>
+
+<script>
+function filterCards(category){
+    const cards = document.querySelectorAll(".card");
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+
+    cards.forEach(card => {
+        const cats = card.getAttribute("data-category");
+        if(category === "all" || cats.includes(category)){
+            card.style.display = "block";
+        }else{
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

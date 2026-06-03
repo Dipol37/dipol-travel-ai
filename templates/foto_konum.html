@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fotoğraftan Konum Tahmini</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📍 Fotoğraftan Konum Tahmini</h1>
+
+    <div class="card">
+        <p>
+            Tatil yeri fotoğrafını yükleyin. Sistem fotoğrafı analiz ederek
+            buranın hangi tarz bir konum olabileceğini tahmin eder.
+        </p>
+
+        <form action="/foto-sonuc" method="POST" enctype="multipart/form-data" onsubmit="analizBaslat()">
+
+            <div class="photo-upload-box">
+
+                <h3>📸 Fotoğraf Yükle</h3>
+                <p>Kapadokya, Paris, Bali, Maldivler, Santorini gibi yerleri deneyebilirsiniz.</p>
+
+                <label class="upload-btn">
+                    Fotoğraf Seç
+                    <input id="konum_fotograf" type="file" name="konum_fotograf" accept="image/*" hidden required>
+                </label>
+
+                <p id="dosya_adi" style="margin-top:15px; font-weight:bold;">
+                    Henüz fotoğraf seçilmedi
+                </p>
+
+                <img id="onizleme" style="display:none; width:100%; max-height:350px; object-fit:cover; border-radius:20px; margin-top:15px;">
+
+            </div>
+
+            <button type="submit">🔍 Fotoğrafı Analiz Et</button>
+
+            <p id="analiz_yazi" style="display:none; text-align:center; font-weight:bold; margin-top:20px;">
+                🤖 AI fotoğrafı analiz ediyor...
+            </p>
+
+        </form>
+    </div>
+
+    <a href="/">⬅ Ana Sayfaya Dön</a>
+
+</div>
+
+<script>
+    const input = document.getElementById("konum_fotograf");
+    const dosyaAdi = document.getElementById("dosya_adi");
+    const onizleme = document.getElementById("onizleme");
+    const analizYazi = document.getElementById("analiz_yazi");
+
+    input.addEventListener("change", function () {
+        if (input.files.length > 0) {
+            const file = input.files[0];
+            dosyaAdi.textContent = "✅ Seçilen fotoğraf: " + file.name;
+
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                onizleme.src = e.target.result;
+                onizleme.style.display = "block";
+            };
+
+            reader.readAsDataURL(file);
+        } else {
+            dosyaAdi.textContent = "Henüz fotoğraf seçilmedi";
+            onizleme.style.display = "none";
+        }
+    });
+
+    function analizBaslat() {
+        analizYazi.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

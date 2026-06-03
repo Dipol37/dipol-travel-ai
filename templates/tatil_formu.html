@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akıllı Tatil Formu | DiPol Travel AI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg1:#030816;
+    --bg2:#071a3a;
+    --glass:rgba(255,255,255,.10);
+    --glass2:rgba(255,255,255,.15);
+    --border:rgba(255,255,255,.18);
+    --text:#ffffff;
+    --muted:rgba(255,255,255,.78);
+    --cyan:#00d4ff;
+    --purple:#8b5cf6;
+    --pink:#ff69d6;
+    --green:#10b981;
+    --orange:#f59e0b;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:var(--text);
+    min-height:100vh;
+    background:
+        radial-gradient(circle at top left,rgba(0,212,255,.20),transparent 35%),
+        radial-gradient(circle at bottom right,rgba(139,92,246,.22),transparent 35%),
+        linear-gradient(135deg,#030816,#071a3a,#06384b);
+    overflow-x:hidden;
+}
+
+.page{
+    padding:28px 4% 50px;
+}
+
+.navbar{
+    max-width:1180px;
+    min-height:78px;
+    margin:0 auto 35px;
+    padding:0 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    border-radius:26px;
+    background:rgba(5,10,30,.68);
+    border:1px solid var(--border);
+    backdrop-filter:blur(20px);
+    box-shadow:0 22px 60px rgba(0,0,0,.28);
+}
+
+.logo{
+    font-size:31px;
+    font-weight:900;
+    letter-spacing:.3px;
+    background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
+    -webkit-background-clip:text;
+    color:transparent;
+    white-space:nowrap;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:19px;
+    flex-wrap:wrap;
+}
+
+.menu a,
+.nav-btn{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:800;
+    opacity:.9;
+}
+
+.menu a:hover{
+    color:var(--cyan);
+}
+
+.nav-btn{
+    padding:12px 18px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.08);
+}
+
+.container{
+    max-width:1050px;
+    margin:auto;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:28px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 16px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.10);
+    color:rgba(255,255,255,.92);
+    font-size:14px;
+    font-weight:800;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:clamp(36px,7vw,66px);
+    line-height:1.05;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#fff,var(--cyan),var(--pink));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:780px;
+    margin:0 auto;
+    color:var(--muted);
+    font-size:18px;
+    line-height:1.7;
+}
+
+.live-strip{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin:26px 0;
+}
+
+.live-card{
+    padding:18px;
+    border-radius:24px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    box-shadow:0 18px 50px rgba(0,0,0,.20);
+}
+
+.live-card span{
+    display:block;
+    font-size:13px;
+    color:rgba(255,255,255,.68);
+    margin-bottom:8px;
+    font-weight:800;
+}
+
+.live-card strong{
+    font-size:16px;
+    line-height:1.45;
+}
+
+.progress-wrap{
+    position:sticky;
+    top:12px;
+    z-index:20;
+    margin-bottom:18px;
+    padding:14px;
+    border-radius:24px;
+    background:rgba(5,10,30,.58);
+    border:1px solid rgba(255,255,255,.13);
+    backdrop-filter:blur(18px);
+}
+
+.step-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+    margin-bottom:12px;
+    color:rgba(255,255,255,.82);
+    font-weight:800;
+    font-size:14px;
+}
+
+.progress{
+    width:100%;
+    height:11px;
+    background:rgba(255,255,255,.12);
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:20%;
+    background:linear-gradient(90deg,var(--purple),var(--cyan),var(--green));
+    transition:.35s ease;
+}
+
+.form-shell{
+    background:rgba(255,255,255,.08);
+    border:1px solid var(--border);
+    border-radius:34px;
+    padding:34px;
+    backdrop-filter:blur(22px);
+    box-shadow:0 28px 90px rgba(0,0,0,.30);
+    min-height:600px;
+}
+
+.step{
+    display:none;
+    animation:fade .25s ease;
+}
+
+.step.active{
+    display:block;
+}
+
+@keyframes fade{
+    from{opacity:0;transform:translateY(8px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+.step-title{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.step-title h2{
+    font-size:clamp(27px,4vw,39px);
+    line-height:1.1;
+}
+
+.step-title p{
+    color:var(--muted);
+    margin-top:8px;
+    line-height:1.6;
+}
+
+.step-number{
+    min-width:60px;
+    height:60px;
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,var(--purple),var(--cyan));
+    font-size:24px;
+    font-weight:900;
+    box-shadow:0 14px 35px rgba(0,212,255,.22);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.full{
+    grid-column:1 / -1;
+}
+
+.field label{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:8px;
+    font-weight:900;
+    font-size:16px;
+}
+
+.hint{
+    font-size:12px;
+    color:rgba(255,255,255,.58);
+    font-weight:700;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:16px 16px;
+    border:none;
+    outline:none;
+    border-radius:18px;
+    font-size:16px;
+    color:#0f172a;
+    background:rgba(255,255,255,.96);
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,.06);
+}
+
+textarea{
+    resize:none;
+    min-height:120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    box-shadow:0 0 0 4px rgba(0,212,255,.22);
+}
+
+.choice-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+}
+
+.choice{
+    position:relative;
+}
+
+.choice input{
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
+}
+
+.choice span{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    min-height:92px;
+    padding:17px;
+    border-radius:22px;
+    border:1px solid rgba(255,255,255,.16);
+    background:rgba(255,255,255,.09);
+    color:white;
+    cursor:pointer;
+    transition:.2s ease;
+    font-weight:900;
+}
+
+.choice small{
+    color:rgba(255,255,255,.66);
+    line-height:1.45;
+    font-weight:700;
+}
+
+.choice input:checked + span{
+    border-color:rgba(0,212,255,.75);
+    background:linear-gradient(135deg,rgba(0,212,255,.24),rgba(139,92,246,.25));
+    transform:translateY(-2px);
+    box-shadow:0 18px 45px rgba(0,212,255,.14);
+}
+
+.notice{
+    margin-top:22px;
+    padding:18px;
+    border-radius:22px;
+    background:rgba(0,0,0,.22);
+    border:1px solid rgba(255,255,255,.14);
+    color:rgba(255,255,255,.86);
+    line-height:1.6;
+}
+
+.notice strong{
+    color:white;
+}
+
+.hidden{
+    display:none !important;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    gap:14px;
+    margin-top:34px;
+}
+
+button,
+.link-btn{
+    border:none;
+    padding:15px 28px;
+    border-radius:19px;
+    font-size:16px;
+    font-weight:900;
+    cursor:pointer;
+    color:white;
+    transition:.2s ease;
+    text-decoration:none;
+    text-align:center;
+}
+
+button:hover,
+.link-btn:hover{
+    transform:translateY(-2px);
+}
+
+.next-btn{
+    background:linear-gradient(90deg,var(--purple),var(--cyan));
+}
+
+.back-btn{
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.18);
+}
+
+.submit-btn{
+    display:none;
+    background:linear-gradient(90deg,var(--green),var(--cyan));
+    box-shadow:0 18px 45px rgba(16,185,129,.22);
+}
+
+.mini-summary{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+    margin-top:20px;
+}
+
+.summary-item{
+    padding:16px;
+    border-radius:20px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.13);
+}
+
+.summary-item span{
+    display:block;
+    color:rgba(255,255,255,.62);
+    font-size:12px;
+    font-weight:900;
+    margin-bottom:7px;
+}
+
+.summary-item strong{
+    font-size:15px;
+    line-height:1.5;
+}
+
+.footer-actions{
+    display:flex;
+    justify-content:center;
+    gap:13px;
+    flex-wrap:wrap;
+    margin-top:24px;
+}
+
+.footer-actions a{
+    color:white;
+    text-decoration:none;
+    padding:12px 17px;
+    border-radius:16px;
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.12);
+    font-weight:800;
+    font-size:14px;
+}
+
+@media(max-width:920px){
+    .menu{display:none;}
+    .navbar{padding:0 18px;}
+    .live-strip{grid-template-columns:1fr;}
+    .grid{grid-template-columns:1fr;}
+    .choice-grid{grid-template-columns:1fr 1fr;}
+    .form-shell{padding:24px 18px;}
+    .step-title{flex-direction:column-reverse;}
+    .mini-summary{grid-template-columns:1fr;}
+}
+
+@media(max-width:560px){
+    .page{padding:18px 14px 35px;}
+    .logo{font-size:25px;}
+    .choice-grid{grid-template-columns:1fr;}
+    .buttons{flex-direction:column;}
+    button,.link-btn{width:100%;}
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+    <nav class="navbar">
+        <div class="logo">🌍 DiPol</div>
+        <div class="menu">
+            <a href="/">Keşfet</a>
+            <a href="/tatil-formu">Akıllı Form</a>
+            <a href="/destinasyonlar">Destinasyonlar</a>
+            <a href="/foto-konum">Foto Konum</a>
+            <a href="/favoriler">⭐ Favorilerim</a>
+            <a href="/rehber">Rehber</a>
+        </div>
+        <a href="/giris" class="nav-btn">Giriş Yap</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="badge">🤖 Canlı veri destekli akıllı tatil önerisi</div>
+            <h1>✨ DiPol Travel AI</h1>
+            <p>Tercihlerini seç, sistem sana uygun destinasyon, bütçe, rota, otel, hava durumu ve döviz bilgisini tek sonuç ekranında hazırlasın.</p>
+        </section>
+
+        <section class="live-strip">
+            <div class="live-card">
+                <span>🌤️ Canlı Hava Önizleme</span>
+                <strong id="liveWeather">Tercihine göre popüler rota hava durumu gösterilecek.</strong>
+            </div>
+            <div class="live-card">
+                <span>💱 Canlı Döviz</span>
+                <strong id="liveCurrency">Döviz bilgisi yükleniyor...</strong>
+            </div>
+            <div class="live-card">
+                <span>💰 Bütçe Mantığı</span>
+                <strong id="budgetInfo">Türkiye için ₺, yurt dışı için € / $ aralıkları kullanılır.</strong>
+            </div>
+        </section>
+
+        <form action="/tatil-sonuc" method="POST" id="travelForm">
+
+            <div class="progress-wrap">
+                <div class="step-top">
+                    <span id="stepText">1 / 5 • Temel Bilgiler</span>
+                    <span id="stepPercent">%20 tamamlandı</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <section class="form-shell">
+
+                <!-- STEP 1 -->
+                <div class="step active" data-title="Temel Bilgiler">
+                    <div class="step-title">
+                        <div>
+                            <h2>👤 Temel Bilgiler</h2>
+                            <p>Planın kişi sayısı, gün sayısı ve çıkış şehrine göre daha gerçekçi hazırlanır.</p>
+                        </div>
+                        <div class="step-number">1</div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="field full">
+                            <label>Bulunduğun şehir <span class="hint">zorunlu değil ama öneriyi güçlendirir</span></label>
+                            <input list="sehirler" name="sehir" id="sehir" placeholder="Örn: Kocaeli, İstanbul, Ankara">
+                            <datalist id="sehirler">
+                                <option value="Adana"><option value="Adıyaman"><option value="Afyonkarahisar"><option value="Ağrı"><option value="Aksaray"><option value="Amasya"><option value="Ankara"><option value="Antalya"><option value="Ardahan"><option value="Artvin"><option value="Aydın"><option value="Balıkesir"><option value="Bartın"><option value="Batman"><option value="Bayburt"><option value="Bilecik"><option value="Bingöl"><option value="Bitlis"><option value="Bolu"><option value="Burdur"><option value="Bursa"><option value="Çanakkale"><option value="Çankırı"><option value="Çorum"><option value="Denizli"><option value="Diyarbakır"><option value="Düzce"><option value="Edirne"><option value="Elazığ"><option value="Erzincan"><option value="Erzurum"><option value="Eskişehir"><option value="Gaziantep"><option value="Giresun"><option value="Gümüşhane"><option value="Hakkari"><option value="Hatay"><option value="Iğdır"><option value="Isparta"><option value="İstanbul"><option value="İzmir"><option value="Kahramanmaraş"><option value="Karabük"><option value="Karaman"><option value="Kars"><option value="Kastamonu"><option value="Kayseri"><option value="Kırıkkale"><option value="Kırklareli"><option value="Kırşehir"><option value="Kilis"><option value="Kocaeli"><option value="Konya"><option value="Kütahya"><option value="Malatya"><option value="Manisa"><option value="Mardin"><option value="Mersin"><option value="Muğla"><option value="Muş"><option value="Nevşehir"><option value="Niğde"><option value="Ordu"><option value="Osmaniye"><option value="Rize"><option value="Sakarya"><option value="Samsun"><option value="Siirt"><option value="Sinop"><option value="Sivas"><option value="Şanlıurfa"><option value="Şırnak"><option value="Tekirdağ"><option value="Tokat"><option value="Trabzon"><option value="Tunceli"><option value="Uşak"><option value="Van"><option value="Yalova"><option value="Yozgat"><option value="Zonguldak">
+                            </datalist>
+                        </div>
+
+                        <div class="field">
+                            <label>Kaç kişi gideceksiniz?</label>
+                            <input type="number" name="kisi" id="kisi" value="1" min="1" max="10" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Kaç gün kalacaksınız?</label>
+                            <input type="number" name="gun" id="gun" value="3" min="1" max="30" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Çocuk var mı?</label>
+                            <select name="cocuk" id="cocuk">
+                                <option value="hayir">Hayır</option>
+                                <option value="evet">Evet</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Tatil ayı</label>
+                            <select name="ay" id="ay">
+                                <option value="farketmez">Fark etmez</option>
+                                <option value="ilkbahar">İlkbahar</option>
+                                <option value="yaz">Yaz</option>
+                                <option value="sonbahar">Sonbahar</option>
+                                <option value="kis">Kış</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="step" data-title="Konum & Bütçe">
+                    <div class="step-title">
+                        <div>
+                            <h2>🌍 Konum & Bütçe</h2>
+                            <p>Seçtiğin konuma göre para birimi, pasaport-vize alanı ve bütçe aralıkları otomatik değişir.</p>
+                        </div>
+                        <div class="step-number">2</div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="field">
+                            <label>Tatil konumu</label>
+                            <select name="konum" id="konumSec">
+                                <option value="turkiye">🇹🇷 Türkiye İçi</option>
+                                <option value="yurtdisi">🌍 Yurt Dışı</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Para birimi</label>
+                            <select name="para_birimi" id="paraBirimi">
+                                <option value="tl">₺ Türk Lirası</option>
+                            </select>
+                        </div>
+
+                        <div class="field full">
+                            <label>Bütçe aralığı <span class="hint">toplam tahmini bütçe</span></label>
+                            <select name="butce" id="butceSec">
+                                <option value="10.000 - 25.000">₺10.000 - ₺25.000</option>
+                                <option value="25.000 - 50.000">₺25.000 - ₺50.000</option>
+                                <option value="50.000 - 80.000">₺50.000 - ₺80.000</option>
+                                <option value="80.000 - 150.000">₺80.000 - ₺150.000</option>
+                                <option value="150.000+">₺150.000+</option>
+                            </select>
+                        </div>
+
+                        <div id="pasaportAlan" class="grid full hidden">
+                            <div class="field">
+                                <label>Pasaport türü</label>
+                                <select name="pasaport" id="pasaport">
+                                    <option value="yok">Pasaportum yok</option>
+                                    <option value="bordo">Bordo Pasaport</option>
+                                    <option value="yesil">Yeşil Pasaport</option>
+                                    <option value="gri">Gri Pasaport</option>
+                                    <option value="siyah">Siyah Pasaport</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Vize tercihi</label>
+                                <select name="vize" id="vize">
+                                    <option value="vizesiz">Vizesiz ülke istiyorum</option>
+                                    <option value="farketmez">Vize fark etmez</option>
+                                    <option value="istemem">Vizeyle uğraşmak istemiyorum</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="notice" id="konumNotice">
+                        <strong>Bilgi:</strong> Türkiye içi seçimlerde ₺ bütçe; yurt dışı seçimlerde Euro veya Dolar bütçe aralığı kullanılır. Döviz önizlemesi canlı olarak gösterilir.
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="step" data-title="Tatil Tarzı">
+                    <div class="step-title">
+                        <div>
+                            <h2>🏖️ Tatil Tarzı</h2>
+                            <p>Sistem bu cevaplara göre Kaş, Ayder, Mardin, Kapadokya, Paris veya Maldivler gibi seçenekler arasından uygun rota seçer.</p>
+                        </div>
+                        <div class="step-number">3</div>
+                    </div>
+
+                    <div class="field full">
+                        <label>Ne tür tatil istersiniz?</label>
+                        <div class="choice-grid">
+                            <label class="choice"><input type="radio" name="tatil" value="deniz" checked><span>🌊 Deniz <small>Sahil, tekne, yüzme</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="doga"><span>🌲 Doğa <small>Yayla, orman, huzur</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="kultur"><span>🏛️ Kültür <small>Tarih, müze, şehir</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="balayi"><span>💍 Romantik <small>Balayı, çift rotası</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="kamp"><span>⛺ Kamp <small>Doğa ve özgürlük</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="kis"><span>❄️ Kış <small>Soğuk, kar, manzara</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="eglence"><span>🎉 Eğlence <small>Aktif ve hareketli</small></span></label>
+                            <label class="choice"><input type="radio" name="tatil" value="lux"><span>✨ Lüks <small>Konfor ve özel deneyim</small></span></label>
+                        </div>
+                    </div>
+
+                    <div class="grid" style="margin-top:22px;">
+                        <div class="field">
+                            <label>Ruh haliniz</label>
+                            <select name="ruh_hali" id="ruhHali">
+                                <option value="dinlenmek">😌 Dinlenmek</option>
+                                <option value="eglence">🥳 Eğlenmek</option>
+                                <option value="romantik">❤️ Romantik</option>
+                                <option value="kesif">🧭 Keşif</option>
+                                <option value="macera">🔥 Macera</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Tatil temposu</label>
+                            <select name="tempo" id="tempo">
+                                <option value="sakin">Sakin ve yavaş</option>
+                                <option value="orta">Dengeli</option>
+                                <option value="aktif">Aktif ve dolu dolu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="step" data-title="Konaklama & Ulaşım">
+                    <div class="step-title">
+                        <div>
+                            <h2>🏨 Konaklama & Ulaşım</h2>
+                            <p>Konaklama ve ulaşım seçimi toplam tahmini bütçeyi etkiler.</p>
+                        </div>
+                        <div class="step-number">4</div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="field">
+                            <label>Konaklama tipi</label>
+                            <select name="konaklama" id="konaklama">
+                                <option value="otel">🏨 Otel</option>
+                                <option value="apart">🏠 Apart</option>
+                                <option value="bungalov">🌲 Bungalov</option>
+                                <option value="villa">🏡 Villa</option>
+                                <option value="resort">🌴 Resort</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Paket türü</label>
+                            <select name="paket_turu" id="paketTuru">
+                                <option value="oda">Sadece oda</option>
+                                <option value="kahvalti">Kahvaltı dahil</option>
+                                <option value="yarim">Yarım pansiyon</option>
+                                <option value="tam">Tam pansiyon</option>
+                                <option value="hersey">Her şey dahil</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Ulaşım tercihi</label>
+                            <select name="ulasim" id="ulasim">
+                                <option value="ucak">✈️ Uçak</option>
+                                <option value="otobus">🚌 Otobüs</option>
+                                <option value="tren">🚆 Tren</option>
+                                <option value="arac">🚗 Kendi aracım</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Önceliğin</label>
+                            <select name="oncelik" id="oncelik">
+                                <option value="butce">Bütçe uygun olsun</option>
+                                <option value="konfor">Konforlu olsun</option>
+                                <option value="manzara">Manzaralı olsun</option>
+                                <option value="merkez">Merkeze yakın olsun</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 5 -->
+                <div class="step" data-title="Son Kontrol">
+                    <div class="step-title">
+                        <div>
+                            <h2>🧭 Son Kontrol</h2>
+                            <p>Not ekleyebilirsin. Sonuçta canlı hava, canlı döviz, tahmini bütçe, rota ve otel önerisi hazırlanır.</p>
+                        </div>
+                        <div class="step-number">5</div>
+                    </div>
+
+                    <div class="field full">
+                        <label>Tatilden beklentin</label>
+                        <textarea name="not" id="not" rows="6" placeholder="Örn: Denize yakın, sakin, fotoğraf çekilecek güzel yerleri olan, bütçemi çok aşmayan bir rota olsun."></textarea>
+                    </div>
+
+                    <div class="mini-summary">
+                        <div class="summary-item"><span>Konum</span><strong id="sumKonum">Türkiye İçi</strong></div>
+                        <div class="summary-item"><span>Bütçe</span><strong id="sumButce">₺10.000 - ₺25.000</strong></div>
+                        <div class="summary-item"><span>Kişi / Gün</span><strong id="sumKisiGun">1 kişi • 3 gün</strong></div>
+                        <div class="summary-item"><span>Beklenen rota</span><strong id="sumRota">Deniz / sahil odaklı rota</strong></div>
+                    </div>
+
+                    <div class="notice">
+                        <strong>Not:</strong> Otel ve ulaşım fiyatları tahmini aralıklarla gösterilir. Canlı veri olarak hava durumu ve döviz bilgisi kullanılır.
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="back-btn" onclick="prevStep()">← Geri</button>
+                    <button type="button" class="next-btn" id="nextBtn" onclick="nextStep()">Devam Et →</button>
+                    <button type="submit" class="submit-btn" id="submitBtn">✨ Tatilimi Bul</button>
+                </div>
+
+            </section>
+        </form>
+
+        <div class="footer-actions">
+            <a href="/destinasyonlar">🏝️ Destinasyon Seçerek Planla</a>
+            <a href="/foto-konum">📸 Fotoğraftan Konum Tahmini</a>
+            <a href="/favoriler">⭐ Favorilerim</a>
+            <a href="/">🏠 Ana Sayfa</a>
+        </div>
+    </main>
+</div>
+
+<script>
+let currentStep = 0;
+
+const steps = document.querySelectorAll(".step");
+const progressBar = document.getElementById("progressBar");
+const nextBtn = document.getElementById("nextBtn");
+const submitBtn = document.getElementById("submitBtn");
+const stepText = document.getElementById("stepText");
+const stepPercent = document.getElementById("stepPercent");
+
+const konumSec = document.getElementById("konumSec");
+const paraBirimi = document.getElementById("paraBirimi");
+const butceSec = document.getElementById("butceSec");
+const pasaportAlan = document.getElementById("pasaportAlan");
+const budgetInfo = document.getElementById("budgetInfo");
+const liveCurrency = document.getElementById("liveCurrency");
+const liveWeather = document.getElementById("liveWeather");
+
+const kisi = document.getElementById("kisi");
+const gun = document.getElementById("gun");
+const sumKonum = document.getElementById("sumKonum");
+const sumButce = document.getElementById("sumButce");
+const sumKisiGun = document.getElementById("sumKisiGun");
+const sumRota = document.getElementById("sumRota");
+
+const weatherCoords = {
+    deniz: {name:"Kaş", lat:36.1999, lon:29.6414},
+    doga: {name:"Ayder Yaylası", lat:40.9527, lon:41.0950},
+    kultur: {name:"Mardin", lat:37.3129, lon:40.7350},
+    balayi: {name:"Kapadokya", lat:38.6431, lon:34.8289},
+    kamp: {name:"Ayder Yaylası", lat:40.9527, lon:41.0950},
+    kis: {name:"Kapadokya", lat:38.6431, lon:34.8289},
+    eglence: {name:"Paris", lat:48.8566, lon:2.3522},
+    lux: {name:"Maldivler", lat:3.2028, lon:73.2207}
+};
+
+const weatherCodes = {
+    0:"☀️ Açık", 1:"🌤️ Genelde açık", 2:"⛅ Parçalı bulutlu", 3:"☁️ Kapalı",
+    45:"🌫️ Sisli", 48:"🌫️ Sisli", 51:"🌦️ Hafif çisenti", 53:"🌦️ Çisenti",
+    55:"🌧️ Yoğun çisenti", 61:"🌧️ Hafif yağmur", 63:"🌧️ Yağmur", 65:"🌧️ Kuvvetli yağmur",
+    71:"🌨️ Hafif kar", 73:"🌨️ Kar", 75:"❄️ Yoğun kar", 80:"🌦️ Hafif sağanak",
+    81:"🌧️ Sağanak", 82:"⛈️ Kuvvetli sağanak", 95:"⛈️ Gök gürültülü"
+};
+
+function selectedTatil(){
+    const checked = document.querySelector('input[name="tatil"]:checked');
+    return checked ? checked.value : "deniz";
+}
+
+function showStep(){
+    steps.forEach((step,index)=>{
+        step.classList.toggle("active", index === currentStep);
+    });
+
+    const percent = Math.round(((currentStep + 1) / steps.length) * 100);
+    progressBar.style.width = percent + "%";
+    stepText.textContent = (currentStep + 1) + " / " + steps.length + " • " + steps[currentStep].dataset.title;
+    stepPercent.textContent = "%" + percent + " tamamlandı";
+
+    nextBtn.style.display = currentStep === steps.length - 1 ? "none" : "inline-block";
+    submitBtn.style.display = currentStep === steps.length - 1 ? "inline-block" : "none";
+    updateSummary();
+}
+
+function validateStep(){
+    if(currentStep === 0){
+        const kisiValue = Number(kisi.value);
+        const gunValue = Number(gun.value);
+
+        if(!kisiValue || kisiValue < 1 || kisiValue > 10){
+            alert("Kişi sayısı 1 ile 10 arasında olmalı.");
+            return false;
+        }
+
+        if(!gunValue || gunValue < 1 || gunValue > 30){
+            alert("Gün sayısı 1 ile 30 arasında olmalı.");
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function nextStep(){
+    if(!validateStep()) return;
+
+    if(currentStep < steps.length - 1){
+        currentStep++;
+        showStep();
+        window.scrollTo({top:0, behavior:"smooth"});
+    }
+}
+
+function prevStep(){
+    if(currentStep > 0){
+        currentStep--;
+        showStep();
+        window.scrollTo({top:0, behavior:"smooth"});
+    }
+}
+
+function konumDegisti(){
+    if(konumSec.value === "yurtdisi"){
+        pasaportAlan.classList.remove("hidden");
+
+        paraBirimi.innerHTML = `
+            <option value="euro">€ Euro</option>
+            <option value="dolar">$ Dolar</option>
+        `;
+
+        butceSec.innerHTML = `
+            <option value="500 - 1000">€ / $ 500 - 1.000</option>
+            <option value="1000 - 2500">€ / $ 1.000 - 2.500</option>
+            <option value="2500 - 5000">€ / $ 2.500 - 5.000</option>
+            <option value="5000 - 10000">€ / $ 5.000 - 10.000</option>
+            <option value="10000+">€ / $ 10.000+</option>
+        `;
+
+        budgetInfo.textContent = "Yurt dışı için seçtiğin para birimine göre Euro/Dolar bütçe aralıkları kullanılacak.";
+    }else{
+        pasaportAlan.classList.add("hidden");
+
+        paraBirimi.innerHTML = `
+            <option value="tl">₺ Türk Lirası</option>
+        `;
+
+        butceSec.innerHTML = `
+            <option value="10.000 - 25.000">₺10.000 - ₺25.000</option>
+            <option value="25.000 - 50.000">₺25.000 - ₺50.000</option>
+            <option value="50.000 - 80.000">₺50.000 - ₺80.000</option>
+            <option value="80.000 - 150.000">₺80.000 - ₺150.000</option>
+            <option value="150.000+">₺150.000+</option>
+        `;
+
+        budgetInfo.textContent = "Türkiye içi planlarda toplam tahmini bütçe Türk Lirası üzerinden değerlendirilir.";
+    }
+
+    updateSummary();
+}
+
+async function loadCurrency(){
+    try{
+        const res = await fetch("https://api.frankfurter.dev/v2/rates?base=EUR&quotes=TRY,USD");
+        const data = await res.json();
+        const eurTry = data.rates.TRY;
+        const usdPerEur = data.rates.USD;
+        const usdTry = eurTry / usdPerEur;
+        liveCurrency.textContent = `1€ ≈ ₺${eurTry.toFixed(2)} • 1$ ≈ ₺${usdTry.toFixed(2)}`;
+    }catch(error){
+        liveCurrency.textContent = "Döviz önizlemesi alınamadı. Sonuç ekranında tekrar denenir.";
+    }
+}
+
+async function loadWeather(){
+    const key = selectedTatil();
+    const item = weatherCoords[key] || weatherCoords.deniz;
+
+    liveWeather.textContent = item.name + " için hava bilgisi yükleniyor...";
+
+    try{
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${item.lat}&longitude=${item.lon}&current=temperature_2m,weather_code,wind_speed_10m&timezone=auto`;
+        const res = await fetch(url);
+        const data = await res.json();
+        const current = data.current;
+        const durum = weatherCodes[current.weather_code] || "🌤️ Hava durumu";
+        liveWeather.textContent = `${item.name}: ${durum} • ${current.temperature_2m}°C • Rüzgar ${current.wind_speed_10m} km/s`;
+    }catch(error){
+        liveWeather.textContent = "Hava önizlemesi alınamadı. Sonuç ekranında tekrar denenir.";
+    }
+}
+
+function updateSummary(){
+    const konumText = konumSec.value === "turkiye" ? "Türkiye İçi" : "Yurt Dışı";
+    const tatil = selectedTatil();
+    const rotaMetinleri = {
+        deniz:"Deniz / sahil odaklı rota",
+        doga:"Doğa / yayla odaklı rota",
+        kultur:"Kültür / tarih odaklı rota",
+        balayi:"Romantik / balayı odaklı rota",
+        kamp:"Kamp / doğa odaklı rota",
+        kis:"Kış / manzara odaklı rota",
+        eglence:"Eğlence / şehir odaklı rota",
+        lux:"Lüks / resort odaklı rota"
+    };
+
+    sumKonum.textContent = konumText;
+    sumButce.textContent = butceSec.options[butceSec.selectedIndex]?.textContent || "Bütçe seçilmedi";
+    sumKisiGun.textContent = `${kisi.value || 1} kişi • ${gun.value || 3} gün`;
+    sumRota.textContent = rotaMetinleri[tatil] || "Akıllı rota";
+}
+
+konumSec.addEventListener("change", konumDegisti);
+butceSec.addEventListener("change", updateSummary);
+kisi.addEventListener("input", updateSummary);
+gun.addEventListener("input", updateSummary);
+document.querySelectorAll('input[name="tatil"]').forEach(item=>{
+    item.addEventListener("change", ()=>{
+        updateSummary();
+        loadWeather();
+    });
+});
+
+document.getElementById("travelForm").addEventListener("submit", function(e){
+    if(!validateStep()){
+        e.preventDefault();
+        return;
+    }
+
+    submitBtn.textContent = "✨ Plan hazırlanıyor...";
+    submitBtn.disabled = true;
+});
+
+konumDegisti();
+showStep();
+loadCurrency();
+loadWeather();
+</script>
+
+</body>
+</html>

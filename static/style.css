@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    animation: backgroundMove 8s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background: #3498db;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #21618c;
+    transform: scale(1.03);
+}
+
+.card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.photo-upload-box {
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border: 2px dashed #3498db;
+    animation: floatBox 3s ease-in-out infinite;
+}
+
+.upload-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: #21618c;
+    transform: scale(1.05);
+}
+
+@keyframes floatBox {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Telefon, tablet ve bilgisayar uyumu */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 92%;
+        margin: 20px auto;
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, select, textarea, button {
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    .photo-upload-box {
+        padding: 15px;
+    }
+
+    .upload-btn {
+        width: 80%;
+    }
+}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Tatil Öneri Sistemi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌍 AI Destekli Akıllı Tatil Planlama Sistemi</h1>
+    <p style="text-align:center;">
+        Tatil tercihlerinizi analiz ederek size en uygun tatil yeri, konaklama ve rota önerisi sunar.
+    </p>
+
+    <form action="/tahmin" method="POST" enctype="multipart/form-data">
+
+        <div class="card">
+            <h2>👤 Kişisel Bilgiler</h2>
+
+            <label>Bulunduğunuz şehri yazın veya listeden seçin:</label>
+            <input list="sehirler" name="sehir" placeholder="Örneğin: İstanbul" required>
+
+            <datalist id="sehirler">
+                <option value="Adana"><option value="Adıyaman"><option value="Afyonkarahisar">
+                <option value="Ağrı"><option value="Aksaray"><option value="Amasya">
+                <option value="Ankara"><option value="Antalya"><option value="Ardahan">
+                <option value="Artvin"><option value="Aydın"><option value="Balıkesir">
+                <option value="Bartın"><option value="Batman"><option value="Bayburt">
+                <option value="Bilecik"><option value="Bingöl"><option value="Bitlis">
+                <option value="Bolu"><option value="Burdur"><option value="Bursa">
+                <option value="Çanakkale"><option value="Çankırı"><option value="Çorum">
+                <option value="Denizli"><option value="Diyarbakır"><option value="Düzce">
+                <option value="Edirne"><option value="Elazığ"><option value="Erzincan">
+                <option value="Erzurum"><option value="Eskişehir"><option value="Gaziantep">
+                <option value="Giresun"><option value="Gümüşhane"><option value="Hakkari">
+                <option value="Hatay"><option value="Iğdır"><option value="Isparta">
+                <option value="İstanbul"><option value="İzmir"><option value="Kahramanmaraş">
+                <option value="Karabük"><option value="Karaman"><option value="Kars">
+                <option value="Kastamonu"><option value="Kayseri"><option value="Kırıkkale">
+                <option value="Kırklareli"><option value="Kırşehir"><option value="Kilis">
+                <option value="Kocaeli"><option value="Konya"><option value="Kütahya">
+                <option value="Malatya"><option value="Manisa"><option value="Mardin">
+                <option value="Mersin"><option value="Muğla"><option value="Muş">
+                <option value="Nevşehir"><option value="Niğde"><option value="Ordu">
+                <option value="Osmaniye"><option value="Rize"><option value="Sakarya">
+                <option value="Samsun"><option value="Siirt"><option value="Sinop">
+                <option value="Sivas"><option value="Şanlıurfa"><option value="Şırnak">
+                <option value="Tekirdağ"><option value="Tokat"><option value="Trabzon">
+                <option value="Tunceli"><option value="Uşak"><option value="Van">
+                <option value="Yalova"><option value="Yozgat"><option value="Zonguldak">
+            </datalist>
+
+            <label>Kaç kişi tatil yapacaksınız?</label>
+            <input type="number" name="kisi" min="1" required>
+
+            <label>Yaş aralığınız:</label>
+            <select name="yas">
+                <option value="18_24">18-24</option>
+                <option value="25_34">25-34</option>
+                <option value="35_44">35-44</option>
+                <option value="45_60">45-60</option>
+                <option value="60_ustu">60+</option>
+            </select>
+
+            <label>Çocuğunuz var mı?</label>
+            <select name="cocuk">
+                <option value="hayir">Hayır</option>
+                <option value="evet">Evet</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>💰 Bütçe ve Süre</h2>
+
+            <label>Kaç gün kalacaksınız?</label>
+            <input type="number" name="gun" min="1" required>
+
+            <label>Bütçe seviyeniz:</label>
+            <select name="butce_seviyesi">
+                <option value="dusuk">Düşük bütçe</option>
+                <option value="orta">Orta bütçe</option>
+                <option value="yuksek">Yüksek bütçe</option>
+                <option value="luks">Lüks bütçe</option>
+            </select>
+
+            <label>Toplam bütçenizi TL olarak yazın:</label>
+            <input type="number" name="butce" min="1" required>
+
+            <label>Bütçe yetmezse sistem %20 artırarak tekrar öneri arasın mı?</label>
+            <select name="butce_artir">
+                <option value="evet">Evet, uygun seçenek bulmak için artırabilir</option>
+                <option value="hayir">Hayır, bütçemi aşmasın</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>🌍 Tatil Konumu</h2>
+
+            <label>Tatil tercihiniz:</label>
+            <select name="konum">
+                <option value="turkiye">Türkiye içi tatil</option>
+                <option value="yurtdisi">Yurt dışı tatil</option>
+            </select>
+
+            <label>Yurt dışı düşünüyorsanız pasaportunuz var mı?</label>
+            <select name="pasaport">
+                <option value="hayir">Hayır, pasaportum yok</option>
+                <option value="evet">Evet, pasaportum var</option>
+            </select>
+
+            <label>Vize durumunuz nedir?</label>
+            <select name="vize">
+                <option value="vizesiz_isterim">Vizesiz ülke istiyorum</option>
+                <option value="vizem_var">Vizem var</option>
+                <option value="vize_alabilirim">Gerekirse vize alabilirim</option>
+                <option value="vize_istemem">Vizeyle uğraşmak istemiyorum</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>🏖️ Tatil Tarzı</h2>
+
+            <label>Nasıl bir tatil istiyorsunuz?</label>
+            <select name="tatil">
+                <option value="deniz">Deniz tatili</option>
+                <option value="doga">Doğa tatili</option>
+                <option value="kultur">Kültür tatili</option>
+                <option value="eglence">Eğlence tatili</option>
+                <option value="sakin">Sakin / kafa dinlemelik tatil</option>
+                <option value="balayi">Balayı / romantik tatil</option>
+                <option value="aile">Aile tatili</option>
+                <option value="kamp">Kamp tatili</option>
+                <option value="kayak">Kayak / kış tatili</option>
+                <option value="luks">Lüks tatil</option>
+                <option value="gemi">Gemi turu / cruise</option>
+                <option value="ada">Ada tatili</option>
+                <option value="sehir">Şehir gezisi</option>
+                <option value="macera">Macera tatili</option>
+            </select>
+
+            <label>Tatil ruh haliniz:</label>
+            <select name="ruh_hali">
+                <option value="dinlenmek">Dinlenmek istiyorum</option>
+                <option value="eglence">Eğlenmek istiyorum</option>
+                <option value="romantik">Romantik bir tatil istiyorum</option>
+                <option value="kultur">Yeni yerler ve kültürler görmek istiyorum</option>
+                <option value="macera">Macera ve aktivite istiyorum</option>
+            </select>
+
+            <label>Kalabalık mı sakinlik mi tercih edersiniz?</label>
+            <select name="ortam">
+                <option value="sakin">Sakin ortam</option>
+                <option value="orta">Ne çok sakin ne çok kalabalık</option>
+                <option value="kalabalik">Canlı ve kalabalık ortam</option>
+                <option value="farketmez">Fark etmez</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>🏨 Konaklama Tercihleri</h2>
+
+            <label>Konaklama tipi:</label>
+            <select name="konaklama">
+                <option value="otel">Otel</option>
+                <option value="apart">Apart</option>
+                <option value="pansiyon">Pansiyon</option>
+                <option value="bungalov">Bungalov</option>
+                <option value="villa">Villa</option>
+                <option value="cruise">Gemi kabini</option>
+            </select>
+
+            <label>Konaklama paketi:</label>
+            <select name="paket_turu">
+                <option value="uygun">💸 Uygun Fiyatlı Konaklama</option>
+                <option value="kahvalti">☕ Kahvaltılı Otel</option>
+                <option value="aksam">🍽️ Kahvaltı + Akşam Yemeği</option>
+                <option value="tam">🍴 3 Öğün Yemek Dahil</option>
+                <option value="hersey_dahil">🌟 Ultra Her Şey Dahil</option>
+            </select>
+
+            <label>Havuz önemli mi?</label>
+            <select name="havuz">
+                <option value="evet">Evet</option>
+                <option value="hayir">Hayır</option>
+                <option value="farketmez">Fark etmez</option>
+            </select>
+
+            <label>Denize yakın olsun mu?</label>
+            <select name="denize_yakin">
+                <option value="evet">Evet</option>
+                <option value="hayir">Hayır</option>
+                <option value="farketmez">Fark etmez</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>🚗 Ulaşım</h2>
+
+            <label>Ulaşım tercihiniz:</label>
+            <select name="ulasim">
+                <option value="ucak">Uçak</option>
+                <option value="otobus">Otobüs</option>
+                <option value="arac">Kendi aracım</option>
+                <option value="tren">Tren</option>
+                <option value="gemi">Gemi</option>
+            </select>
+
+            <label>Maksimum kaç saat yolculuk yapmak istersiniz?</label>
+            <input type="number" name="max_yol" min="1" required>
+        </div>
+
+        <div class="card">
+            <h2>✨ Ek Tercihler</h2>
+
+            <label>Gece hayatı önemli mi?</label>
+            <select name="gece_hayati">
+                <option value="evet">Evet</option>
+                <option value="hayir">Hayır</option>
+                <option value="farketmez">Fark etmez</option>
+            </select>
+
+            <label>Fotoğraf çekilecek güzel yerler önemli mi?</label>
+            <select name="fotograf_onem">
+                <option value="evet">Evet</option>
+                <option value="hayir">Hayır</option>
+                <option value="farketmez">Fark etmez</option>
+            </select>
+
+            <label>Evcil hayvanla mı seyahat edeceksiniz?</label>
+            <select name="evcil">
+                <option value="hayir">Hayır</option>
+                <option value="evet">Evet</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>📝 Beklenti Notu</h2>
+
+            <label>Tatilden beklentinizi detaylı yazın:</label>
+            <textarea name="not" rows="5" placeholder="Örneğin: Sessiz, denize yakın, uygun fiyatlı ve fotoğraf çekilecek güzel bir yer istiyorum."></textarea>
+
+            <div class="photo-upload-box">
+    <h3>📸 Tatil Tarzı Fotoğrafı</h3>
+    <p>Beğendiğiniz tatil tarzına benzeyen bir fotoğraf yükleyin.</p>
+
+    <label class="upload-btn">
+        Fotoğraf Ekle
+        <input type="file" name="ilham_fotograf" hidden>
+    </label>
+</div>
+
+<div class="photo-upload-box">
+    <h3>📍 Konum Bulma Fotoğrafı</h3>
+    <p>Neresi olduğunu öğrenmek istediğiniz tatil yeri fotoğrafını yükleyin.</p>
+
+    <label class="upload-btn">
+        Fotoğraf Ekle
+        <input type="file" name="konum_fotograf" hidden>
+    </label>
+</div>
+        </div>
+
+        <button type="submit">✨ AI ile Tatil Öner</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
+<div class="oneriler">
+    
+    <div class="oneri-kart">
+        <h3>{{ oneri1.yer }}</h3>
+        <p>{{ oneri1.fiyat }}</p>
+        <p>{{ oneri1.ulasim }}</p>
+    </div>
+
+    <div class="oneri-kart">
+        <h3>{{ oneri2.yer }}</h3>
+        <p>{{ oneri2.fiyat }}</p>
+        <p>{{ oneri2.ulasim }}</p>
+    </div>
+
+    <div class="oneri-kart">
+        <h3>{{ oneri3.yer }}</h3>
+        <p>{{ oneri3.fiyat }}</p>
+        <p>{{ oneri3.ulasim }}</p>
+    </div>
+
+</div>
+.oneriler{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.oneri-kart{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:20px;
+    width:250px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.oneri-kart:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.oneri-kart h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+.oneri-kart p{
+    color:#ddd;
+}

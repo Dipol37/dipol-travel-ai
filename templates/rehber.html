@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DiPol Rehber</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    color:white;
+
+    background:
+    linear-gradient(rgba(3,8,25,.60),rgba(3,8,25,.88)),
+    url("/static/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.page{
+
+    padding:30px 4%;
+}
+
+.navbar{
+
+    height:85px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    border-radius:24px;
+
+    background:rgba(7,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+}
+
+.logo{
+
+    font-size:34px;
+    font-weight:bold;
+
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.menu{
+
+    display:flex;
+    gap:28px;
+}
+
+.menu a,
+.login{
+
+    color:white;
+    text-decoration:none;
+}
+
+.login{
+
+    padding:13px 24px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.25);
+}
+
+.hero{
+
+    text-align:center;
+
+    margin-top:80px;
+}
+
+.hero h1{
+
+    font-size:78px;
+
+    margin-bottom:25px;
+}
+
+.gradient{
+
+    background:linear-gradient(90deg,#00d4ff,#9b5cff,#ff69d6);
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:1.8;
+}
+
+.grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+}
+
+.card{
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.card h2{
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
+
+.card p{
+
+    line-height:1.8;
+
+    opacity:.92;
+}
+
+.steps{
+
+    margin-top:80px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.steps h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+}
+
+.step{
+
+    margin-bottom:28px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+}
+
+.step strong{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:22px;
+}
+
+.bottom{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:rgba(6,12,35,.65);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.bottom h2{
+
+    margin-bottom:18px;
+
+    font-size:36px;
+}
+
+.bottom p{
+
+    line-height:1.8;
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+@media(max-width:1000px){
+
+.grid{
+
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+
+    font-size:48px;
+}
+
+.menu{
+
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="navbar">
+
+<div class="logo">
+🌍 DiPol
+</div>
+
+<div class="menu">
+
+<a href="/">Keşfet</a>
+<a href="/destinasyonlar">Destinasyonlar</a>
+<a href="/oteller">Otel Önerileri</a>
+<a href="/ucuslar">Ulaşım</a>
+<a href="/rehber">Seyahat Rehberi</a>
+<a href="/hakkimizda">Hakkımızda</a>
+
+</div>
+
+<a href="/giris" class="login">
+Giriş Yap
+</a>
+
+</div>
+
+<section class="hero">
+
+<h1>
+
+<span class="gradient">
+DiPol
+</span>
+
+Nasıl Çalışır?
+
+</h1>
+
+<p>
+
+DiPol Travel AI, kullanıcı tercihlerini analiz ederek
+kişiye özel tatil önerileri oluşturan yapay zeka destekli
+akıllı bir seyahat planlama platformudur.
+
+</p>
+
+</section>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">
+🤖
+</div>
+
+<h2>
+AI Destekli Analiz
+</h2>
+
+<p>
+
+Sistem; bütçe, ruh hali, tatil tarzı,
+ulaşım ve konaklama tercihlerinizi
+analiz ederek en uygun rotaları belirler.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+📍
+</div>
+
+<h2>
+Kişiye Özel Rotalar
+</h2>
+
+<p>
+
+Her kullanıcı için farklı tatil önerileri,
+gezi planları ve seyahat deneyimleri oluşturulur.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+💰
+</div>
+
+<h2>
+Akıllı Fiyat Hesabı
+</h2>
+
+<p>
+
+Kişi sayısı, gün sayısı ve bütçe analiz edilerek
+tahmini toplam maliyet hesaplanır.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="steps">
+
+<h2>
+✨ Kullanım Rehberi
+</h2>
+
+<div class="step">
+
+<strong>
+1. Tatil Formunu Doldurun
+</strong>
+
+Tercihlerinizi, bütçenizi ve tatil tarzınızı seçin.
+
+</div>
+
+<div class="step">
+
+<strong>
+2. Yapay Zeka Analiz Etsin
+</strong>
+
+AI sistemi verilerinizi analiz ederek
+size özel öneriler oluştursun.
+
+</div>
+
+<div class="step">
+
+<strong>
+3. Tatilinizi Keşfedin
+</strong>
+
+Önerilen şehirleri, otelleri,
+fiyatları ve gezi rotalarını inceleyin.
+
+</div>
+
+<div class="step">
+
+<strong>
+4. Tatilinizi Planlayın
+</strong>
+
+Sizin için oluşturulan rota ile
+tatilinizi kolayca planlayın.
+
+</div>
+
+</div>
+
+<div class="bottom">
+
+<h2>
+🌍 DiPol Travel AI Amacı
+</h2>
+
+<p>
+
+Amacımız;
+seyahat planlama sürecini kolaylaştırmak,
+kişilere özel tatil önerileri sunmak
+ve yapay zeka ile daha akıllı bir
+seyahat deneyimi oluşturmaktır.
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

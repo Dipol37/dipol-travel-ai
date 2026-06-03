@@ -1,0 +1,501 @@
+﻿Cinsiyet,Kisi_Sayisi,Tatil_Turu,Atmosfer,Grup_Tipi,Yeme_Icme,Cevre,Konaklama_Tipi,Butce_TL,Onerilen_Yer,Gecelik_Fiyat_TL
+Kadın,3,Doğa,Gece Hayatı,Balayı,Sadece Kahvaltı,Dağ,Bungalov,12663,Mykonos - Yunanistan (Gece Hayatı),11024
+Kadın,4,Orman,Sessiz,Aile (Bebekli),Yemeksiz,Havuz,Airbnb,6000,Antalya - Olympos (Doğa/Bungalov),1318
+Kadın,4,Kültür,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Havuz,Bungalov,16419,Bali - Endonezya (Doğa/Egzotik),15487
+Kadın,6,Kültür,Gece Hayatı,Arkadaş Grubu,Her Şey Dahil,Havuz,Otel,9083,Muğla - Fethiye (Deniz/Macera),4269
+Erkek,2,Orman,Sessiz,Aile (Bebekli),Sadece Kahvaltı,Dağ,Otel,6882,Rize - Ayder (Doğa/Orman),3650
+Kadın,3,Deniz,Eğlenceli,Aile (Çocuksuz),Her Şey Dahil,Ada,Airbnb,13511,Santorini - Yunanistan (Deniz/Balayı),11324
+Kadın,4,Orman,Sessiz,Aile (Bebekli),Yemeksiz,Deniz,Bungalov,21472,Las Vegas - ABD (Gece Hayatı/Eğlence),16644
+Erkek,2,Kültür,Eğlenceli,Arkadaş Grubu,Yemeksiz,Ada,Villa,17392,Machu Picchu - Peru (Macera/Kültür),13746
+Kadın,1,Deniz,Aktif,Tek Kişi,Yemeksiz,Deniz,Otel,18251,İsviçre Alpleri (Dağ/Doğa),19101
+Erkek,2,Kültür,Sessiz,Aile (Çocuksuz),Her Şey Dahil,Dağ,Villa,11346,İzmir - Alaçatı (Eğlence/Gece Hayatı),6613
+Erkek,4,Deniz,Sessiz,Arkadaş Grubu,Her Şey Dahil,Orman,Villa,7520,Antalya - Kaş (Deniz/Eğlence),3722
+Erkek,6,Orman,Sessiz,Balayı,Sadece Kahvaltı,Havuz,Airbnb,16435,Las Vegas - ABD (Gece Hayatı/Eğlence),14610
+Kadın,4,Kültür,Aktif,Aile (Bebekli),Her Şey Dahil,Dağ,Bungalov,5201,İzmir - Alaçatı (Eğlence/Gece Hayatı),5660
+Kadın,6,Deniz,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Deniz,Bungalov,7379,Antalya - Olympos (Doğa/Bungalov),3798
+Erkek,6,Doğa,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Ada,Airbnb,29798,Seyşeller (Lüks/Ada),30308
+Erkek,4,Deniz,Sessiz,Aile (Çocuksuz),Her Şey Dahil,Havuz,Villa,15308,Las Vegas - ABD (Gece Hayatı/Eğlence),15492
+Kadın,1,Orman,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Havuz,Otel,13083,Phuket - Tayland (Ada/Aktif),13808
+Kadın,2,Doğa,Eğlenceli,Balayı,Her Şey Dahil,Dağ,Villa,14267,Kenya - Masai Mara Safari (Macera/Orman),15912
+Kadın,2,Deniz,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Orman,Bungalov,1790,Muğla - Fethiye (Deniz/Macera),3315
+Kadın,3,Orman,Sessiz ve Aktif,Tek Kişi,Sadece Kahvaltı,Orman,Villa,2222,Antalya - Olympos (Doğa/Bungalov),2534
+Erkek,4,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Dağ,Otel,19785,İsviçre Alpleri (Dağ/Doğa),17487
+Kadın,2,Deniz,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Dağ,Airbnb,17852,Bali - Endonezya (Doğa/Egzotik),16153
+Erkek,5,Orman,Sessiz ve Aktif,Balayı,Yemeksiz,Deniz,Villa,5189,Antalya - Kaş (Deniz/Eğlence),3739
+Erkek,2,Macera,Sessiz,Aile (Bebekli),Sadece Kahvaltı,Ada,Villa,19433,Las Vegas - ABD (Gece Hayatı/Eğlence),17345
+Erkek,3,Macera,Eğlenceli,Balayı,Yemeksiz,Ada,Villa,17208,Machu Picchu - Peru (Macera/Kültür),13426
+Erkek,5,Kültür,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Ada,Airbnb,2539,Antalya - Olympos (Doğa/Bungalov),1491
+Kadın,6,Doğa,Sessiz ve Aktif,Tek Kişi,Sadece Kahvaltı,Ada,Airbnb,5232,Antalya - Olympos (Doğa/Bungalov),3430
+Kadın,5,Macera,Sessiz,Tek Kişi,Her Şey Dahil,Dağ,Villa,22219,İsviçre Alpleri (Dağ/Doğa),18090
+Kadın,2,Macera,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Dağ,Airbnb,10214,İzmir - Alaçatı (Eğlence/Gece Hayatı),5752
+Kadın,3,Orman,Sessiz,Arkadaş Grubu,Her Şey Dahil,Dağ,Villa,7692,Santorini - Yunanistan (Deniz/Balayı),9223
+Kadın,6,Kültür,Gece Hayatı,Arkadaş Grubu,Her Şey Dahil,Dağ,Bungalov,6340,İzmir - Alaçatı (Eğlence/Gece Hayatı),6917
+Erkek,2,Kültür,Sessiz,Aile (Bebekli),Sadece Kahvaltı,Deniz,Airbnb,14460,İbiza - İspanya (Gece Hayatı/Deniz),13441
+Erkek,1,Macera,Sessiz,Aile (Bebekli),Her Şey Dahil,Deniz,Bungalov,7872,İzmir - Alaçatı (Eğlence/Gece Hayatı),6953
+Erkek,6,Macera,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Ada,Bungalov,6266,Bolu - Yedigöller (Doğa/Sessiz),3092
+Kadın,5,Doğa,Eğlenceli,Aile (Bebekli),Sadece Kahvaltı,Deniz,Bungalov,3802,Rize - Ayder (Doğa/Orman),2149
+Erkek,2,Doğa,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Ada,Otel,14482,Mykonos - Yunanistan (Gece Hayatı),11615
+Kadın,2,Macera,Sessiz,Arkadaş Grubu,Yemeksiz,Orman,Airbnb,3182,Rize - Ayder (Doğa/Orman),3873
+Erkek,1,Deniz,Eğlenceli,Balayı,Sadece Kahvaltı,Deniz,Otel,11320,Phuket - Tayland (Ada/Aktif),12872
+Kadın,3,Deniz,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Dağ,Airbnb,3551,İzmir - Alaçatı (Eğlence/Gece Hayatı),5043
+Erkek,1,Macera,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Ada,Otel,24437,Maldivler (Lüks/Ada/Balayı),26049
+Erkek,2,Orman,Aktif,Arkadaş Grubu,Yemeksiz,Orman,Airbnb,13844,Santorini - Yunanistan (Deniz/Balayı),9102
+Erkek,1,Kültür,Aktif,Balayı,Yemeksiz,Orman,Bungalov,2131,Antalya - Olympos (Doğa/Bungalov),2712
+Kadın,5,Deniz,Eğlenceli,Tek Kişi,Yemeksiz,Havuz,Otel,15029,Las Vegas - ABD (Gece Hayatı/Eğlence),15224
+Kadın,1,Macera,Sessiz,Tek Kişi,Her Şey Dahil,Ada,Otel,23390,Maldivler (Lüks/Ada/Balayı),24980
+Erkek,5,Macera,Gece Hayatı,Balayı,Her Şey Dahil,Havuz,Bungalov,7856,Antalya - Kaş (Deniz/Eğlence),3641
+Kadın,6,Doğa,Sessiz,Balayı,Her Şey Dahil,Deniz,Villa,8757,Rize - Ayder (Doğa/Orman),4559
+Erkek,4,Deniz,Sessiz ve Aktif,Aile (Bebekli),Her Şey Dahil,Dağ,Airbnb,27719,Maldivler (Lüks/Ada/Balayı),24595
+Erkek,6,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Ada,Bungalov,13110,Mykonos - Yunanistan (Gece Hayatı),10268
+Kadın,3,Doğa,Sessiz,Arkadaş Grubu,Her Şey Dahil,Deniz,Villa,14904,Las Vegas - ABD (Gece Hayatı/Eğlence),16039
+Kadın,1,Macera,Sessiz,Aile (Bebekli),Yemeksiz,Ada,Otel,14196,Santorini - Yunanistan (Deniz/Balayı),9459
+Erkek,5,Kültür,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Deniz,Villa,14362,Bali - Endonezya (Doğa/Egzotik),15709
+Erkek,1,Macera,Eğlenceli,Tek Kişi,Yemeksiz,Havuz,Villa,4118,Nevşehir - Kapadokya (Macera/Balayı),5874
+Kadın,5,Kültür,Aktif,Balayı,Her Şey Dahil,Dağ,Villa,1189,Antalya - Olympos (Doğa/Bungalov),2319
+Kadın,4,Doğa,Sessiz,Tek Kişi,Her Şey Dahil,Dağ,Villa,7577,Bolu - Yedigöller (Doğa/Sessiz),2919
+Erkek,3,Deniz,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Orman,Airbnb,17262,Las Vegas - ABD (Gece Hayatı/Eğlence),17383
+Erkek,3,Kültür,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Havuz,Airbnb,3820,Rize - Ayder (Doğa/Orman),4897
+Kadın,6,Doğa,Sessiz,Balayı,Her Şey Dahil,Ada,Airbnb,3530,İzmir - Alaçatı (Eğlence/Gece Hayatı),4426
+Kadın,4,Deniz,Sessiz,Balayı,Sadece Kahvaltı,Dağ,Villa,12871,Santorini - Yunanistan (Deniz/Balayı),10137
+Erkek,4,Kültür,Sessiz ve Aktif,Balayı,Sadece Kahvaltı,Ada,Bungalov,14413,Bali - Endonezya (Doğa/Egzotik),15911
+Kadın,4,Doğa,Sessiz,Balayı,Sadece Kahvaltı,Ada,Bungalov,9156,Muğla - Fethiye (Deniz/Macera),5166
+Erkek,4,Macera,Aktif,Balayı,Sadece Kahvaltı,Orman,Otel,5357,Rize - Ayder (Doğa/Orman),4808
+Erkek,5,Macera,Aktif,Balayı,Yemeksiz,Orman,Villa,3047,Antalya - Kaş (Deniz/Eğlence),3533
+Kadın,3,Orman,Sessiz ve Aktif,Aile (Bebekli),Sadece Kahvaltı,Dağ,Villa,19230,Norveç Fiyortları (Doğa/Macera),19074
+Kadın,4,Orman,Gece Hayatı,Tek Kişi,Her Şey Dahil,Havuz,Villa,7645,Amsterdam - Hollanda (Eğlence/Aktif),7347
+Erkek,4,Kültür,Eğlenceli,Arkadaş Grubu,Yemeksiz,Havuz,Bungalov,25776,Maldivler (Lüks/Ada/Balayı),27335
+Erkek,5,Macera,Gece Hayatı,Arkadaş Grubu,Sadece Kahvaltı,Deniz,Villa,4911,İzmir - Alaçatı (Eğlence/Gece Hayatı),5739
+Kadın,6,Macera,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Orman,Villa,17960,İsviçre Alpleri (Dağ/Doğa),17455
+Kadın,4,Orman,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Deniz,Otel,4005,Bolu - Yedigöller (Doğa/Sessiz),1958
+Erkek,6,Kültür,Gece Hayatı,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Otel,16800,Bali - Endonezya (Doğa/Egzotik),16674
+Erkek,4,Deniz,Aktif,Arkadaş Grubu,Yemeksiz,Orman,Bungalov,20472,Bali - Endonezya (Doğa/Egzotik),15927
+Kadın,4,Kültür,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Dağ,Otel,13637,Santorini - Yunanistan (Deniz/Balayı),11118
+Erkek,3,Deniz,Sessiz,Balayı,Sadece Kahvaltı,Ada,Airbnb,4005,Rize - Ayder (Doğa/Orman),4977
+Erkek,4,Deniz,Sessiz,Balayı,Sadece Kahvaltı,Ada,Otel,14890,Machu Picchu - Peru (Macera/Kültür),14360
+Kadın,2,Doğa,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Dağ,Villa,11974,Phuket - Tayland (Ada/Aktif),13240
+Erkek,4,Kültür,Sessiz,Balayı,Yemeksiz,Deniz,Otel,27076,Seyşeller (Lüks/Ada),28204
+Erkek,5,Orman,Gece Hayatı,Balayı,Her Şey Dahil,Deniz,Villa,14374,Machu Picchu - Peru (Macera/Kültür),13658
+Erkek,1,Orman,Sessiz,Arkadaş Grubu,Sadece Kahvaltı,Orman,Airbnb,18696,Machu Picchu - Peru (Macera/Kültür),13933
+Erkek,3,Macera,Eğlenceli,Aile (Bebekli),Yemeksiz,Ada,Otel,10506,Santorini - Yunanistan (Deniz/Balayı),10980
+Erkek,2,Orman,Gece Hayatı,Balayı,Sadece Kahvaltı,Ada,Villa,9304,İzmir - Alaçatı (Eğlence/Gece Hayatı),4805
+Kadın,1,Doğa,Eğlenceli,Balayı,Yemeksiz,Havuz,Villa,13296,Machu Picchu - Peru (Macera/Kültür),14507
+Kadın,1,Orman,Eğlenceli,Balayı,Her Şey Dahil,Dağ,Villa,1289,Antalya - Olympos (Doğa/Bungalov),1482
+Kadın,1,Doğa,Aktif,Arkadaş Grubu,Yemeksiz,Deniz,Villa,19344,İsviçre Alpleri (Dağ/Doğa),17671
+Erkek,1,Macera,Gece Hayatı,Balayı,Her Şey Dahil,Ada,Villa,13173,Phuket - Tayland (Ada/Aktif),13457
+Kadın,4,Kültür,Eğlenceli,Arkadaş Grubu,Sadece Kahvaltı,Orman,Otel,19302,Kenya - Masai Mara Safari (Macera/Orman),17318
+Kadın,1,Deniz,Sessiz ve Aktif,Tek Kişi,Sadece Kahvaltı,Orman,Bungalov,21543,Norveç Fiyortları (Doğa/Macera),19285
+Erkek,1,Doğa,Aktif,Tek Kişi,Yemeksiz,Ada,Otel,22239,Norveç Fiyortları (Doğa/Macera),22002
+Kadın,1,Deniz,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Dağ,Bungalov,5171,Antalya - Kaş (Deniz/Eğlence),4494
+Erkek,4,Kültür,Gece Hayatı,Aile (Bebekli),Her Şey Dahil,Havuz,Otel,7646,Bolu - Yedigöller (Doğa/Sessiz),2927
+Erkek,3,Doğa,Eğlenceli,Balayı,Yemeksiz,Havuz,Airbnb,34270,Seyşeller (Lüks/Ada),29675
+Kadın,3,Orman,Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Dağ,Villa,4456,Antalya - Olympos (Doğa/Bungalov),1712
+Erkek,4,Kültür,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Deniz,Airbnb,18077,Kenya - Masai Mara Safari (Macera/Orman),17538
+Kadın,5,Orman,Sessiz ve Aktif,Balayı,Yemeksiz,Deniz,Bungalov,4354,Antalya - Olympos (Doğa/Bungalov),2849
+Kadın,1,Orman,Sessiz,Balayı,Her Şey Dahil,Havuz,Bungalov,15944,Mykonos - Yunanistan (Gece Hayatı),13061
+Kadın,1,Orman,Eğlenceli,Balayı,Her Şey Dahil,Deniz,Airbnb,16207,Santorini - Yunanistan (Deniz/Balayı),11215
+Erkek,4,Doğa,Eğlenceli,Arkadaş Grubu,Yemeksiz,Dağ,Otel,12431,Mykonos - Yunanistan (Gece Hayatı),13140
+Erkek,2,Deniz,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Orman,Otel,7673,Antalya - Olympos (Doğa/Bungalov),3347
+Kadın,5,Deniz,Eğlenceli,Aile (Bebekli),Yemeksiz,Orman,Villa,20447,Machu Picchu - Peru (Macera/Kültür),16116
+Kadın,6,Doğa,Aktif,Aile (Bebekli),Sadece Kahvaltı,Deniz,Otel,17890,Bali - Endonezya (Doğa/Egzotik),14745
+Kadın,1,Doğa,Sessiz,Aile (Çocuksuz),Her Şey Dahil,Deniz,Villa,5568,Rize - Ayder (Doğa/Orman),1728
+Kadın,5,Deniz,Sessiz,Balayı,Yemeksiz,Deniz,Villa,5023,İzmir - Alaçatı (Eğlence/Gece Hayatı),3806
+Kadın,1,Macera,Gece Hayatı,Aile (Çocuksuz),Sadece Kahvaltı,Ada,Bungalov,18744,Phuket - Tayland (Ada/Aktif),14173
+Erkek,6,Macera,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Dağ,Airbnb,10296,Phuket - Tayland (Ada/Aktif),11767
+Erkek,2,Deniz,Aktif,Tek Kişi,Her Şey Dahil,Deniz,Villa,17964,Bali - Endonezya (Doğa/Egzotik),16170
+Erkek,2,Macera,Gece Hayatı,Tek Kişi,Her Şey Dahil,Dağ,Airbnb,11944,Phuket - Tayland (Ada/Aktif),12231
+Kadın,3,Orman,Sessiz,Arkadaş Grubu,Yemeksiz,Deniz,Villa,8082,Santorini - Yunanistan (Deniz/Balayı),8797
+Erkek,4,Doğa,Sessiz ve Aktif,Aile (Bebekli),Her Şey Dahil,Orman,Villa,26367,Norveç Fiyortları (Doğa/Macera),22413
+Kadın,2,Kültür,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Dağ,Otel,1453,Bolu - Yedigöller (Doğa/Sessiz),2055
+Erkek,2,Orman,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Deniz,Villa,17349,Phuket - Tayland (Ada/Aktif),12486
+Kadın,6,Kültür,Sessiz,Tek Kişi,Sadece Kahvaltı,Ada,Bungalov,5154,Antalya - Kaş (Deniz/Eğlence),3945
+Kadın,4,Doğa,Sessiz,Arkadaş Grubu,Yemeksiz,Havuz,Otel,12061,Amsterdam - Hollanda (Eğlence/Aktif),9426
+Kadın,1,Orman,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Deniz,Airbnb,29628,Maldivler (Lüks/Ada/Balayı),26799
+Kadın,6,Kültür,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Orman,Otel,8814,Bolu - Yedigöller (Doğa/Sessiz),4193
+Erkek,2,Macera,Sessiz,Arkadaş Grubu,Her Şey Dahil,Ada,Villa,8185,Amsterdam - Hollanda (Eğlence/Aktif),8991
+Erkek,3,Deniz,Eğlenceli,Aile (Bebekli),Sadece Kahvaltı,Deniz,Otel,29093,Seyşeller (Lüks/Ada),29369
+Kadın,5,Doğa,Aktif,Arkadaş Grubu,Yemeksiz,Orman,Otel,8436,Amsterdam - Hollanda (Eğlence/Aktif),10273
+Erkek,4,Orman,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Dağ,Otel,5566,Rize - Ayder (Doğa/Orman),2000
+Erkek,1,Macera,Sessiz,Aile (Bebekli),Her Şey Dahil,Havuz,Airbnb,2073,Antalya - Olympos (Doğa/Bungalov),3624
+Erkek,4,Macera,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Orman,Otel,17437,Bali - Endonezya (Doğa/Egzotik),14734
+Erkek,5,Orman,Eğlenceli,Balayı,Sadece Kahvaltı,Dağ,Villa,22161,Norveç Fiyortları (Doğa/Macera),19564
+Kadın,4,Deniz,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Dağ,Otel,5086,İzmir - Alaçatı (Eğlence/Gece Hayatı),4306
+Erkek,3,Kültür,Sessiz,Tek Kişi,Yemeksiz,Orman,Bungalov,6149,Antalya - Kaş (Deniz/Eğlence),5763
+Erkek,3,Kültür,Eğlenceli,Balayı,Yemeksiz,Ada,Bungalov,15399,Phuket - Tayland (Ada/Aktif),12023
+Erkek,2,Doğa,Sessiz,Tek Kişi,Sadece Kahvaltı,Deniz,Otel,3937,Nevşehir - Kapadokya (Macera/Balayı),2512
+Kadın,4,Doğa,Sessiz,Aile (Çocuksuz),Yemeksiz,Havuz,Otel,14445,İbiza - İspanya (Gece Hayatı/Deniz),11687
+Kadın,4,Orman,Eğlenceli,Balayı,Yemeksiz,Ada,Otel,14392,Bali - Endonezya (Doğa/Egzotik),14090
+Kadın,4,Deniz,Eğlenceli,Aile (Çocuksuz),Sadece Kahvaltı,Deniz,Bungalov,15573,İbiza - İspanya (Gece Hayatı/Deniz),13528
+Kadın,2,Kültür,Aktif,Aile (Çocuksuz),Yemeksiz,Ada,Villa,18378,Las Vegas - ABD (Gece Hayatı/Eğlence),15966
+Erkek,4,Orman,Sessiz,Aile (Bebekli),Sadece Kahvaltı,Deniz,Bungalov,28661,Maldivler (Lüks/Ada/Balayı),27281
+Kadın,6,Doğa,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Deniz,Bungalov,6105,Rize - Ayder (Doğa/Orman),4946
+Kadın,2,Macera,Gece Hayatı,Arkadaş Grubu,Her Şey Dahil,Orman,Otel,16602,Bali - Endonezya (Doğa/Egzotik),14370
+Kadın,1,Deniz,Gece Hayatı,Balayı,Her Şey Dahil,Orman,Airbnb,15764,Kenya - Masai Mara Safari (Macera/Orman),17354
+Erkek,6,Deniz,Sessiz,Balayı,Yemeksiz,Ada,Bungalov,22481,Maldivler (Lüks/Ada/Balayı),24138
+Kadın,2,Orman,Gece Hayatı,Tek Kişi,Her Şey Dahil,Havuz,Bungalov,4214,Antalya - Olympos (Doğa/Bungalov),2036
+Erkek,6,Macera,Aktif,Tek Kişi,Yemeksiz,Dağ,Airbnb,19584,İsviçre Alpleri (Dağ/Doğa),20282
+Kadın,5,Macera,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Orman,Airbnb,17908,Machu Picchu - Peru (Macera/Kültür),13945
+Erkek,3,Deniz,Eğlenceli,Balayı,Her Şey Dahil,Havuz,Bungalov,7723,Muğla - Fethiye (Deniz/Macera),5058
+Erkek,2,Kültür,Gece Hayatı,Balayı,Sadece Kahvaltı,Deniz,Bungalov,10520,Mykonos - Yunanistan (Gece Hayatı),10303
+Erkek,4,Deniz,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Orman,Villa,4941,İzmir - Alaçatı (Eğlence/Gece Hayatı),6941
+Erkek,5,Kültür,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Orman,Villa,14321,Machu Picchu - Peru (Macera/Kültür),14337
+Kadın,5,Macera,Gece Hayatı,Aile (Çocuksuz),Sadece Kahvaltı,Deniz,Bungalov,18091,Las Vegas - ABD (Gece Hayatı/Eğlence),15076
+Erkek,6,Deniz,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Orman,Bungalov,6395,Antalya - Kaş (Deniz/Eğlence),3028
+Kadın,3,Macera,Eğlenceli,Tek Kişi,Her Şey Dahil,Havuz,Otel,18462,Kenya - Masai Mara Safari (Macera/Orman),17579
+Erkek,2,Kültür,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Ada,Otel,2119,Rize - Ayder (Doğa/Orman),2181
+Erkek,4,Kültür,Sessiz ve Aktif,Aile (Bebekli),Sadece Kahvaltı,Havuz,Otel,11532,Amsterdam - Hollanda (Eğlence/Aktif),8381
+Erkek,6,Deniz,Aktif,Balayı,Yemeksiz,Deniz,Bungalov,11987,Mykonos - Yunanistan (Gece Hayatı),10105
+Erkek,5,Macera,Sessiz ve Aktif,Arkadaş Grubu,Her Şey Dahil,Deniz,Villa,16547,Kenya - Masai Mara Safari (Macera/Orman),18081
+Erkek,5,Macera,Sessiz,Aile (Çocuksuz),Yemeksiz,Deniz,Bungalov,17233,Bali - Endonezya (Doğa/Egzotik),15689
+Kadın,2,Deniz,Gece Hayatı,Balayı,Yemeksiz,Deniz,Otel,6701,Nevşehir - Kapadokya (Macera/Balayı),2504
+Erkek,3,Orman,Gece Hayatı,Arkadaş Grubu,Her Şey Dahil,Havuz,Otel,13258,Mykonos - Yunanistan (Gece Hayatı),10045
+Kadın,1,Deniz,Aktif,Arkadaş Grubu,Her Şey Dahil,Orman,Otel,24534,Norveç Fiyortları (Doğa/Macera),19712
+Kadın,6,Doğa,Eğlenceli,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Otel,10707,İzmir - Alaçatı (Eğlence/Gece Hayatı),5986
+Erkek,3,Doğa,Gece Hayatı,Tek Kişi,Her Şey Dahil,Deniz,Otel,11113,İzmir - Alaçatı (Eğlence/Gece Hayatı),6748
+Kadın,6,Macera,Aktif,Aile (Çocuksuz),Yemeksiz,Deniz,Airbnb,30146,Seyşeller (Lüks/Ada),27094
+Kadın,5,Kültür,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Deniz,Otel,25185,Maldivler (Lüks/Ada/Balayı),27144
+Kadın,6,Orman,Aktif,Balayı,Sadece Kahvaltı,Orman,Bungalov,3960,Bolu - Yedigöller (Doğa/Sessiz),2132
+Erkek,5,Kültür,Gece Hayatı,Balayı,Her Şey Dahil,Havuz,Villa,26710,Maldivler (Lüks/Ada/Balayı),26421
+Erkek,6,Kültür,Gece Hayatı,Aile (Bebekli),Sadece Kahvaltı,Deniz,Otel,19600,Las Vegas - ABD (Gece Hayatı/Eğlence),15086
+Kadın,2,Doğa,Eğlenceli,Tek Kişi,Her Şey Dahil,Havuz,Airbnb,16909,Kenya - Masai Mara Safari (Macera/Orman),15663
+Kadın,6,Macera,Gece Hayatı,Arkadaş Grubu,Sadece Kahvaltı,Dağ,Bungalov,6496,İzmir - Alaçatı (Eğlence/Gece Hayatı),4512
+Erkek,5,Kültür,Sessiz,Aile (Bebekli),Yemeksiz,Ada,Otel,17824,Bali - Endonezya (Doğa/Egzotik),17155
+Kadın,4,Deniz,Aktif,Tek Kişi,Yemeksiz,Havuz,Bungalov,5749,Bolu - Yedigöller (Doğa/Sessiz),3782
+Erkek,6,Kültür,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Havuz,Bungalov,18175,Las Vegas - ABD (Gece Hayatı/Eğlence),17273
+Erkek,6,Kültür,Sessiz,Arkadaş Grubu,Yemeksiz,Ada,Airbnb,19143,Las Vegas - ABD (Gece Hayatı/Eğlence),14971
+Erkek,5,Doğa,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Deniz,Airbnb,22447,İsviçre Alpleri (Dağ/Doğa),18725
+Erkek,2,Doğa,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Havuz,Bungalov,1206,Bolu - Yedigöller (Doğa/Sessiz),2957
+Erkek,4,Macera,Sessiz ve Aktif,Aile (Bebekli),Yemeksiz,Ada,Airbnb,14152,Bali - Endonezya (Doğa/Egzotik),16110
+Kadın,4,Kültür,Sessiz,Aile (Çocuksuz),Her Şey Dahil,Deniz,Airbnb,5559,İzmir - Alaçatı (Eğlence/Gece Hayatı),5680
+Kadın,3,Kültür,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Ada,Villa,18166,Kenya - Masai Mara Safari (Macera/Orman),17410
+Kadın,1,Macera,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Orman,Bungalov,12146,Amsterdam - Hollanda (Eğlence/Aktif),10375
+Kadın,2,Doğa,Sessiz,Balayı,Yemeksiz,Deniz,Otel,9049,Antalya - Kaş (Deniz/Eğlence),5404
+Erkek,3,Doğa,Sessiz,Arkadaş Grubu,Yemeksiz,Deniz,Otel,14810,Bali - Endonezya (Doğa/Egzotik),14082
+Erkek,5,Deniz,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Dağ,Villa,13023,Las Vegas - ABD (Gece Hayatı/Eğlence),14220
+Erkek,1,Macera,Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Orman,Airbnb,14528,Machu Picchu - Peru (Macera/Kültür),14658
+Erkek,5,Orman,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Havuz,Bungalov,29423,Seyşeller (Lüks/Ada),30012
+Erkek,2,Deniz,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Ada,Bungalov,2414,Muğla - Fethiye (Deniz/Macera),3946
+Erkek,2,Orman,Gece Hayatı,Tek Kişi,Yemeksiz,Ada,Otel,3243,Muğla - Fethiye (Deniz/Macera),4219
+Kadın,5,Deniz,Sessiz,Balayı,Sadece Kahvaltı,Ada,Otel,2766,Bolu - Yedigöller (Doğa/Sessiz),3056
+Kadın,4,Doğa,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Dağ,Airbnb,29912,Seyşeller (Lüks/Ada),27324
+Erkek,4,Deniz,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Deniz,Villa,14734,Bali - Endonezya (Doğa/Egzotik),14741
+Kadın,4,Orman,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Dağ,Villa,13021,Machu Picchu - Peru (Macera/Kültür),14035
+Kadın,1,Kültür,Sessiz,Aile (Bebekli),Sadece Kahvaltı,Dağ,Airbnb,12391,Amsterdam - Hollanda (Eğlence/Aktif),9446
+Erkek,1,Doğa,Sessiz,Balayı,Her Şey Dahil,Ada,Bungalov,6593,Bolu - Yedigöller (Doğa/Sessiz),2822
+Kadın,1,Doğa,Eğlenceli,Balayı,Her Şey Dahil,Dağ,Bungalov,7609,İzmir - Alaçatı (Eğlence/Gece Hayatı),4679
+Erkek,3,Macera,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Deniz,Villa,2990,Antalya - Olympos (Doğa/Bungalov),3702
+Kadın,1,Doğa,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Deniz,Villa,10170,Amsterdam - Hollanda (Eğlence/Aktif),8145
+Erkek,2,Orman,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Orman,Airbnb,18855,İsviçre Alpleri (Dağ/Doğa),19123
+Erkek,6,Deniz,Eğlenceli,Balayı,Yemeksiz,Ada,Otel,20038,Norveç Fiyortları (Doğa/Macera),21046
+Erkek,1,Macera,Sessiz,Arkadaş Grubu,Yemeksiz,Dağ,Otel,2224,Antalya - Kaş (Deniz/Eğlence),4117
+Erkek,6,Orman,Aktif,Aile (Bebekli),Yemeksiz,Dağ,Villa,7982,Antalya - Olympos (Doğa/Bungalov),3483
+Kadın,1,Macera,Sessiz,Arkadaş Grubu,Sadece Kahvaltı,Havuz,Bungalov,6808,Muğla - Fethiye (Deniz/Macera),4180
+Kadın,1,Macera,Gece Hayatı,Aile (Çocuksuz),Yemeksiz,Deniz,Otel,10929,Amsterdam - Hollanda (Eğlence/Aktif),8136
+Erkek,2,Orman,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Orman,Airbnb,7147,Muğla - Fethiye (Deniz/Macera),3361
+Kadın,4,Deniz,Sessiz,Arkadaş Grubu,Her Şey Dahil,Dağ,Airbnb,4961,Antalya - Olympos (Doğa/Bungalov),3326
+Erkek,6,Orman,Eğlenceli,Tek Kişi,Her Şey Dahil,Ada,Bungalov,31650,Seyşeller (Lüks/Ada),28982
+Erkek,3,Kültür,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Havuz,Bungalov,3864,Antalya - Kaş (Deniz/Eğlence),4693
+Erkek,1,Kültür,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Ada,Otel,2925,Nevşehir - Kapadokya (Macera/Balayı),3398
+Erkek,2,Orman,Sessiz,Arkadaş Grubu,Her Şey Dahil,Ada,Bungalov,2620,Rize - Ayder (Doğa/Orman),1646
+Kadın,5,Deniz,Gece Hayatı,Arkadaş Grubu,Sadece Kahvaltı,Ada,Otel,2778,Antalya - Olympos (Doğa/Bungalov),3155
+Kadın,6,Macera,Sessiz,Aile (Bebekli),Her Şey Dahil,Orman,Otel,16437,İbiza - İspanya (Gece Hayatı/Deniz),14347
+Erkek,1,Orman,Eğlenceli,Aile (Çocuksuz),Sadece Kahvaltı,Orman,Villa,15119,İbiza - İspanya (Gece Hayatı/Deniz),13266
+Kadın,4,Deniz,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Dağ,Bungalov,3145,Nevşehir - Kapadokya (Macera/Balayı),3811
+Erkek,5,Macera,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Ada,Bungalov,19284,İsviçre Alpleri (Dağ/Doğa),18456
+Kadın,6,Macera,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Airbnb,17629,Las Vegas - ABD (Gece Hayatı/Eğlence),16936
+Kadın,1,Kültür,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Bungalov,28321,Seyşeller (Lüks/Ada),28664
+Kadın,5,Doğa,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Orman,Bungalov,1120,Bolu - Yedigöller (Doğa/Sessiz),2788
+Erkek,2,Doğa,Gece Hayatı,Aile (Bebekli),Her Şey Dahil,Ada,Villa,4103,Bolu - Yedigöller (Doğa/Sessiz),1134
+Erkek,2,Doğa,Sessiz ve Aktif,Aile (Bebekli),Yemeksiz,Deniz,Bungalov,11083,Muğla - Fethiye (Deniz/Macera),6302
+Kadın,3,Kültür,Sessiz,Balayı,Yemeksiz,Deniz,Otel,12766,Amsterdam - Hollanda (Eğlence/Aktif),8699
+Kadın,4,Macera,Gece Hayatı,Aile (Bebekli),Her Şey Dahil,Deniz,Bungalov,19082,Bali - Endonezya (Doğa/Egzotik),14579
+Kadın,3,Deniz,Aktif,Aile (Bebekli),Yemeksiz,Dağ,Airbnb,5951,Rize - Ayder (Doğa/Orman),4189
+Erkek,1,Orman,Sessiz,Arkadaş Grubu,Her Şey Dahil,Deniz,Bungalov,6839,Antalya - Olympos (Doğa/Bungalov),2891
+Kadın,1,Orman,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Ada,Villa,19337,Norveç Fiyortları (Doğa/Macera),19183
+Kadın,5,Macera,Gece Hayatı,Arkadaş Grubu,Her Şey Dahil,Deniz,Bungalov,12637,Phuket - Tayland (Ada/Aktif),11484
+Erkek,6,Kültür,Eğlenceli,Tek Kişi,Her Şey Dahil,Orman,Otel,17608,Machu Picchu - Peru (Macera/Kültür),14800
+Kadın,3,Macera,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Orman,Airbnb,688,Bolu - Yedigöller (Doğa/Sessiz),1307
+Kadın,4,Deniz,Aktif,Aile (Bebekli),Sadece Kahvaltı,Havuz,Airbnb,6860,Bolu - Yedigöller (Doğa/Sessiz),2095
+Kadın,4,Deniz,Sessiz,Tek Kişi,Her Şey Dahil,Deniz,Villa,16486,Kenya - Masai Mara Safari (Macera/Orman),17693
+Erkek,6,Doğa,Sessiz,Aile (Çocuksuz),Sadece Kahvaltı,Deniz,Bungalov,8360,Nevşehir - Kapadokya (Macera/Balayı),5986
+Kadın,4,Orman,Sessiz ve Aktif,Balayı,Yemeksiz,Havuz,Airbnb,29369,Seyşeller (Lüks/Ada),27535
+Erkek,6,Doğa,Eğlenceli,Balayı,Her Şey Dahil,Dağ,Bungalov,20832,Norveç Fiyortları (Doğa/Macera),20400
+Kadın,4,Kültür,Aktif,Balayı,Her Şey Dahil,Havuz,Villa,5657,Muğla - Fethiye (Deniz/Macera),5390
+Erkek,4,Macera,Sessiz ve Aktif,Balayı,Yemeksiz,Orman,Airbnb,2968,Nevşehir - Kapadokya (Macera/Balayı),4833
+Erkek,5,Kültür,Aktif,Tek Kişi,Yemeksiz,Orman,Airbnb,19888,İsviçre Alpleri (Dağ/Doğa),17714
+Kadın,6,Kültür,Sessiz,Tek Kişi,Her Şey Dahil,Havuz,Villa,6170,Muğla - Fethiye (Deniz/Macera),5030
+Kadın,3,Doğa,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Havuz,Villa,28442,Seyşeller (Lüks/Ada),27181
+Kadın,3,Doğa,Sessiz,Tek Kişi,Yemeksiz,Orman,Airbnb,11058,Muğla - Fethiye (Deniz/Macera),6336
+Kadın,6,Macera,Gece Hayatı,Aile (Bebekli),Yemeksiz,Dağ,Bungalov,29990,Maldivler (Lüks/Ada/Balayı),26785
+Kadın,4,Kültür,Sessiz,Balayı,Her Şey Dahil,Orman,Otel,11630,Machu Picchu - Peru (Macera/Kültür),13503
+Erkek,1,Doğa,Gece Hayatı,Balayı,Sadece Kahvaltı,Orman,Airbnb,24269,Norveç Fiyortları (Doğa/Macera),21320
+Kadın,6,Macera,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Orman,Bungalov,12334,Mykonos - Yunanistan (Gece Hayatı),10907
+Kadın,5,Kültür,Aktif,Arkadaş Grubu,Her Şey Dahil,Dağ,Airbnb,20454,Bali - Endonezya (Doğa/Egzotik),16599
+Erkek,2,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Orman,Otel,8699,Santorini - Yunanistan (Deniz/Balayı),10533
+Erkek,1,Kültür,Eğlenceli,Arkadaş Grubu,Yemeksiz,Ada,Villa,13166,İbiza - İspanya (Gece Hayatı/Deniz),13198
+Kadın,6,Kültür,Sessiz,Aile (Çocuksuz),Yemeksiz,Ada,Bungalov,10715,Phuket - Tayland (Ada/Aktif),11373
+Kadın,5,Doğa,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Havuz,Villa,24407,Maldivler (Lüks/Ada/Balayı),24130
+Erkek,3,Orman,Eğlenceli,Balayı,Sadece Kahvaltı,Deniz,Bungalov,14438,Amsterdam - Hollanda (Eğlence/Aktif),10492
+Kadın,2,Kültür,Aktif,Aile (Bebekli),Her Şey Dahil,Ada,Bungalov,12992,İbiza - İspanya (Gece Hayatı/Deniz),12869
+Erkek,2,Orman,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Dağ,Otel,18726,Machu Picchu - Peru (Macera/Kültür),14405
+Erkek,2,Orman,Gece Hayatı,Arkadaş Grubu,Sadece Kahvaltı,Havuz,Airbnb,6579,Rize - Ayder (Doğa/Orman),4478
+Erkek,6,Kültür,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Orman,Otel,6035,Bolu - Yedigöller (Doğa/Sessiz),2070
+Kadın,4,Kültür,Sessiz ve Aktif,Aile (Bebekli),Her Şey Dahil,Deniz,Otel,12654,Santorini - Yunanistan (Deniz/Balayı),11401
+Kadın,1,Doğa,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Dağ,Villa,9988,Phuket - Tayland (Ada/Aktif),11386
+Erkek,5,Doğa,Aktif,Balayı,Yemeksiz,Ada,Otel,10258,Amsterdam - Hollanda (Eğlence/Aktif),10320
+Erkek,4,Orman,Sessiz,Balayı,Yemeksiz,Havuz,Otel,4411,Bolu - Yedigöller (Doğa/Sessiz),3230
+Kadın,3,Orman,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Deniz,Airbnb,10914,Santorini - Yunanistan (Deniz/Balayı),11363
+Erkek,1,Doğa,Aktif,Aile (Çocuksuz),Yemeksiz,Havuz,Airbnb,2970,Bolu - Yedigöller (Doğa/Sessiz),1758
+Kadın,5,Macera,Sessiz ve Aktif,Balayı,Her Şey Dahil,Havuz,Villa,9681,Nevşehir - Kapadokya (Macera/Balayı),5710
+Erkek,4,Macera,Gece Hayatı,Balayı,Her Şey Dahil,Havuz,Otel,11440,Santorini - Yunanistan (Deniz/Balayı),8866
+Erkek,6,Deniz,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Dağ,Villa,5216,Muğla - Fethiye (Deniz/Macera),5946
+Erkek,1,Deniz,Sessiz,Aile (Çocuksuz),Yemeksiz,Orman,Otel,17367,Machu Picchu - Peru (Macera/Kültür),15459
+Erkek,1,Deniz,Aktif,Balayı,Yemeksiz,Ada,Otel,30200,Maldivler (Lüks/Ada/Balayı),25855
+Erkek,3,Macera,Eğlenceli,Balayı,Yemeksiz,Havuz,Villa,14059,Bali - Endonezya (Doğa/Egzotik),15825
+Erkek,4,Kültür,Gece Hayatı,Balayı,Sadece Kahvaltı,Dağ,Villa,11360,Amsterdam - Hollanda (Eğlence/Aktif),9499
+Erkek,2,Doğa,Sessiz ve Aktif,Balayı,Sadece Kahvaltı,Dağ,Otel,6892,İzmir - Alaçatı (Eğlence/Gece Hayatı),5278
+Erkek,3,Doğa,Gece Hayatı,Arkadaş Grubu,Sadece Kahvaltı,Orman,Airbnb,5114,Bolu - Yedigöller (Doğa/Sessiz),2268
+Kadın,4,Macera,Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Dağ,Villa,18163,Mykonos - Yunanistan (Gece Hayatı),13277
+Kadın,1,Macera,Gece Hayatı,Aile (Bebekli),Her Şey Dahil,Havuz,Otel,7842,Muğla - Fethiye (Deniz/Macera),3400
+Kadın,1,Macera,Aktif,Arkadaş Grubu,Her Şey Dahil,Ada,Villa,26298,Maldivler (Lüks/Ada/Balayı),25233
+Erkek,5,Doğa,Sessiz,Aile (Çocuksuz),Yemeksiz,Dağ,Airbnb,6648,İzmir - Alaçatı (Eğlence/Gece Hayatı),3735
+Erkek,5,Kültür,Eğlenceli,Arkadaş Grubu,Sadece Kahvaltı,Orman,Villa,3053,Antalya - Kaş (Deniz/Eğlence),4692
+Kadın,1,Orman,Sessiz ve Aktif,Balayı,Her Şey Dahil,Deniz,Airbnb,4710,Antalya - Olympos (Doğa/Bungalov),2082
+Kadın,4,Macera,Sessiz,Balayı,Her Şey Dahil,Havuz,Otel,22686,Norveç Fiyortları (Doğa/Macera),22175
+Erkek,3,Doğa,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Deniz,Bungalov,6549,Antalya - Kaş (Deniz/Eğlence),2918
+Erkek,6,Doğa,Gece Hayatı,Aile (Bebekli),Yemeksiz,Ada,Airbnb,6041,Antalya - Olympos (Doğa/Bungalov),1423
+Kadın,3,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Ada,Villa,9806,Amsterdam - Hollanda (Eğlence/Aktif),8114
+Erkek,3,Deniz,Gece Hayatı,Tek Kişi,Her Şey Dahil,Havuz,Airbnb,15277,Mykonos - Yunanistan (Gece Hayatı),12189
+Kadın,4,Macera,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Orman,Airbnb,5968,Bolu - Yedigöller (Doğa/Sessiz),3985
+Erkek,5,Doğa,Sessiz,Balayı,Her Şey Dahil,Deniz,Villa,25886,Maldivler (Lüks/Ada/Balayı),24078
+Kadın,4,Doğa,Eğlenceli,Balayı,Yemeksiz,Havuz,Airbnb,5281,Antalya - Olympos (Doğa/Bungalov),2554
+Kadın,1,Kültür,Aktif,Aile (Bebekli),Her Şey Dahil,Dağ,Villa,10059,Amsterdam - Hollanda (Eğlence/Aktif),10256
+Erkek,1,Orman,Aktif,Aile (Çocuksuz),Yemeksiz,Dağ,Villa,23779,İsviçre Alpleri (Dağ/Doğa),19162
+Erkek,1,Deniz,Sessiz,Tek Kişi,Yemeksiz,Orman,Airbnb,26760,Maldivler (Lüks/Ada/Balayı),27231
+Erkek,4,Macera,Gece Hayatı,Aile (Çocuksuz),Yemeksiz,Ada,Otel,4646,Antalya - Kaş (Deniz/Eğlence),4327
+Kadın,3,Doğa,Sessiz,Tek Kişi,Yemeksiz,Deniz,Otel,24803,Maldivler (Lüks/Ada/Balayı),24158
+Erkek,6,Orman,Sessiz,Tek Kişi,Her Şey Dahil,Dağ,Otel,7525,Rize - Ayder (Doğa/Orman),4125
+Erkek,5,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Havuz,Villa,32508,Seyşeller (Lüks/Ada),29213
+Erkek,6,Orman,Aktif,Balayı,Sadece Kahvaltı,Dağ,Villa,4253,Nevşehir - Kapadokya (Macera/Balayı),5476
+Kadın,3,Deniz,Aktif,Tek Kişi,Sadece Kahvaltı,Orman,Otel,6572,Antalya - Kaş (Deniz/Eğlence),2903
+Kadın,4,Deniz,Eğlenceli,Aile (Çocuksuz),Her Şey Dahil,Ada,Bungalov,21028,Norveç Fiyortları (Doğa/Macera),19921
+Erkek,3,Kültür,Sessiz,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Airbnb,13689,Santorini - Yunanistan (Deniz/Balayı),10021
+Kadın,5,Deniz,Eğlenceli,Tek Kişi,Her Şey Dahil,Orman,Otel,15862,İsviçre Alpleri (Dağ/Doğa),17592
+Kadın,4,Deniz,Aktif,Balayı,Her Şey Dahil,Ada,Villa,11591,Phuket - Tayland (Ada/Aktif),11186
+Erkek,4,Doğa,Gece Hayatı,Tek Kişi,Yemeksiz,Havuz,Airbnb,2354,Antalya - Kaş (Deniz/Eğlence),2899
+Kadın,6,Doğa,Eğlenceli,Aile (Bebekli),Sadece Kahvaltı,Deniz,Airbnb,17265,Bali - Endonezya (Doğa/Egzotik),16402
+Erkek,1,Doğa,Aktif,Tek Kişi,Her Şey Dahil,Orman,Otel,15691,Las Vegas - ABD (Gece Hayatı/Eğlence),15879
+Kadın,2,Kültür,Sessiz,Arkadaş Grubu,Yemeksiz,Orman,Airbnb,26762,Maldivler (Lüks/Ada/Balayı),25993
+Erkek,5,Macera,Eğlenceli,Balayı,Her Şey Dahil,Havuz,Bungalov,24848,Norveç Fiyortları (Doğa/Macera),21832
+Erkek,4,Orman,Aktif,Aile (Çocuksuz),Yemeksiz,Deniz,Airbnb,8621,Nevşehir - Kapadokya (Macera/Balayı),4374
+Kadın,3,Deniz,Sessiz,Arkadaş Grubu,Her Şey Dahil,Orman,Villa,6633,İzmir - Alaçatı (Eğlence/Gece Hayatı),4209
+Erkek,1,Deniz,Aktif,Arkadaş Grubu,Yemeksiz,Deniz,Bungalov,16961,Bali - Endonezya (Doğa/Egzotik),16815
+Erkek,5,Deniz,Sessiz,Tek Kişi,Sadece Kahvaltı,Dağ,Villa,5873,Nevşehir - Kapadokya (Macera/Balayı),5946
+Kadın,5,Deniz,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Havuz,Airbnb,9286,Antalya - Kaş (Deniz/Eğlence),5972
+Erkek,1,Deniz,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Ada,Otel,13972,Mykonos - Yunanistan (Gece Hayatı),11071
+Kadın,6,Doğa,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Orman,Villa,4579,Antalya - Olympos (Doğa/Bungalov),1688
+Erkek,5,Kültür,Sessiz ve Aktif,Aile (Bebekli),Sadece Kahvaltı,Havuz,Villa,1489,Antalya - Olympos (Doğa/Bungalov),1842
+Kadın,3,Deniz,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Deniz,Airbnb,7092,Bolu - Yedigöller (Doğa/Sessiz),3310
+Kadın,2,Deniz,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Deniz,Otel,24035,Norveç Fiyortları (Doğa/Macera),20045
+Kadın,5,Orman,Sessiz ve Aktif,Aile (Bebekli),Yemeksiz,Orman,Airbnb,4388,Nevşehir - Kapadokya (Macera/Balayı),2767
+Kadın,6,Orman,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Orman,Airbnb,17014,Bali - Endonezya (Doğa/Egzotik),14172
+Kadın,4,Kültür,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Deniz,Airbnb,19967,Las Vegas - ABD (Gece Hayatı/Eğlence),17047
+Kadın,2,Kültür,Aktif,Balayı,Her Şey Dahil,Orman,Airbnb,7634,Santorini - Yunanistan (Deniz/Balayı),8392
+Erkek,6,Doğa,Gece Hayatı,Aile (Bebekli),Yemeksiz,Orman,Villa,2181,Muğla - Fethiye (Deniz/Macera),3641
+Erkek,5,Kültür,Sessiz,Balayı,Her Şey Dahil,Havuz,Bungalov,945,Bolu - Yedigöller (Doğa/Sessiz),2479
+Erkek,2,Kültür,Sessiz,Arkadaş Grubu,Sadece Kahvaltı,Orman,Airbnb,20754,İsviçre Alpleri (Dağ/Doğa),18182
+Kadın,6,Doğa,Gece Hayatı,Aile (Bebekli),Sadece Kahvaltı,Deniz,Villa,22106,İsviçre Alpleri (Dağ/Doğa),19899
+Kadın,4,Deniz,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Orman,Bungalov,10291,İbiza - İspanya (Gece Hayatı/Deniz),11893
+Erkek,2,Orman,Sessiz ve Aktif,Arkadaş Grubu,Her Şey Dahil,Orman,Bungalov,19834,Kenya - Masai Mara Safari (Macera/Orman),17377
+Erkek,5,Orman,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Dağ,Airbnb,9349,Muğla - Fethiye (Deniz/Macera),4643
+Kadın,3,Deniz,Sessiz ve Aktif,Balayı,Her Şey Dahil,Havuz,Otel,3737,Antalya - Olympos (Doğa/Bungalov),3599
+Erkek,1,Orman,Eğlenceli,Balayı,Sadece Kahvaltı,Ada,Villa,11174,Amsterdam - Hollanda (Eğlence/Aktif),8949
+Kadın,2,Deniz,Gece Hayatı,Balayı,Yemeksiz,Dağ,Villa,33758,Seyşeller (Lüks/Ada),29266
+Kadın,5,Kültür,Eğlenceli,Aile (Çocuksuz),Sadece Kahvaltı,Orman,Airbnb,17844,İbiza - İspanya (Gece Hayatı/Deniz),13721
+Kadın,5,Macera,Sessiz,Tek Kişi,Yemeksiz,Dağ,Bungalov,9709,Muğla - Fethiye (Deniz/Macera),5606
+Kadın,2,Deniz,Gece Hayatı,Aile (Çocuksuz),Yemeksiz,Dağ,Bungalov,12689,Santorini - Yunanistan (Deniz/Balayı),9248
+Kadın,6,Orman,Sessiz,Arkadaş Grubu,Her Şey Dahil,Havuz,Villa,5106,Antalya - Olympos (Doğa/Bungalov),1679
+Erkek,4,Orman,Sessiz,Balayı,Yemeksiz,Ada,Otel,21857,Norveç Fiyortları (Doğa/Macera),21506
+Kadın,4,Doğa,Sessiz,Balayı,Her Şey Dahil,Orman,Airbnb,25433,Seyşeller (Lüks/Ada),27244
+Kadın,6,Orman,Gece Hayatı,Tek Kişi,Yemeksiz,Havuz,Villa,34270,Seyşeller (Lüks/Ada),30066
+Kadın,4,Orman,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Ada,Otel,8363,Santorini - Yunanistan (Deniz/Balayı),10155
+Erkek,4,Orman,Sessiz,Aile (Bebekli),Her Şey Dahil,Dağ,Airbnb,12662,Santorini - Yunanistan (Deniz/Balayı),10334
+Erkek,4,Deniz,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Deniz,Villa,17240,Bali - Endonezya (Doğa/Egzotik),16993
+Erkek,1,Orman,Aktif,Tek Kişi,Her Şey Dahil,Orman,Villa,5352,Rize - Ayder (Doğa/Orman),3484
+Kadın,4,Kültür,Gece Hayatı,Arkadaş Grubu,Her Şey Dahil,Orman,Bungalov,11125,Mykonos - Yunanistan (Gece Hayatı),10701
+Kadın,2,Orman,Gece Hayatı,Aile (Çocuksuz),Sadece Kahvaltı,Deniz,Villa,18990,Norveç Fiyortları (Doğa/Macera),19986
+Erkek,1,Orman,Gece Hayatı,Balayı,Her Şey Dahil,Havuz,Villa,10572,Mykonos - Yunanistan (Gece Hayatı),12081
+Erkek,3,Deniz,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Dağ,Bungalov,12740,Mykonos - Yunanistan (Gece Hayatı),10484
+Erkek,6,Orman,Sessiz ve Aktif,Balayı,Sadece Kahvaltı,Deniz,Otel,12337,Amsterdam - Hollanda (Eğlence/Aktif),7622
+Erkek,2,Doğa,Aktif,Aile (Bebekli),Her Şey Dahil,Orman,Otel,10301,Santorini - Yunanistan (Deniz/Balayı),8343
+Erkek,6,Macera,Sessiz,Arkadaş Grubu,Her Şey Dahil,Orman,Villa,19560,Las Vegas - ABD (Gece Hayatı/Eğlence),17258
+Kadın,5,Orman,Eğlenceli,Aile (Bebekli),Yemeksiz,Ada,Villa,18377,İsviçre Alpleri (Dağ/Doğa),17550
+Kadın,4,Doğa,Sessiz ve Aktif,Aile (Bebekli),Sadece Kahvaltı,Dağ,Airbnb,21769,Norveç Fiyortları (Doğa/Macera),20348
+Erkek,5,Doğa,Sessiz,Arkadaş Grubu,Yemeksiz,Havuz,Bungalov,8684,Santorini - Yunanistan (Deniz/Balayı),8842
+Erkek,1,Macera,Aktif,Aile (Çocuksuz),Yemeksiz,Ada,Villa,6423,Antalya - Olympos (Doğa/Bungalov),3498
+Erkek,3,Orman,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Havuz,Otel,12048,Santorini - Yunanistan (Deniz/Balayı),9192
+Erkek,6,Doğa,Gece Hayatı,Balayı,Her Şey Dahil,Deniz,Airbnb,9178,Nevşehir - Kapadokya (Macera/Balayı),5128
+Erkek,1,Deniz,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Dağ,Bungalov,9770,İzmir - Alaçatı (Eğlence/Gece Hayatı),6564
+Erkek,2,Macera,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Orman,Villa,20013,İsviçre Alpleri (Dağ/Doğa),18114
+Kadın,1,Orman,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Havuz,Villa,12072,Mykonos - Yunanistan (Gece Hayatı),12550
+Erkek,2,Doğa,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Dağ,Bungalov,28892,Seyşeller (Lüks/Ada),27540
+Erkek,3,Doğa,Sessiz ve Aktif,Balayı,Sadece Kahvaltı,Havuz,Airbnb,6204,Muğla - Fethiye (Deniz/Macera),3631
+Kadın,1,Orman,Sessiz,Balayı,Sadece Kahvaltı,Ada,Villa,27063,Maldivler (Lüks/Ada/Balayı),25639
+Kadın,3,Orman,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Deniz,Bungalov,10930,İzmir - Alaçatı (Eğlence/Gece Hayatı),6815
+Kadın,5,Doğa,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Ada,Airbnb,7865,Muğla - Fethiye (Deniz/Macera),4554
+Kadın,2,Orman,Sessiz ve Aktif,Aile (Bebekli),Yemeksiz,Deniz,Villa,16542,İbiza - İspanya (Gece Hayatı/Deniz),11563
+Kadın,1,Doğa,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Dağ,Villa,2124,Bolu - Yedigöller (Doğa/Sessiz),1944
+Erkek,4,Macera,Sessiz,Aile (Çocuksuz),Her Şey Dahil,Ada,Villa,3018,Rize - Ayder (Doğa/Orman),2690
+Erkek,3,Kültür,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Orman,Bungalov,5457,Antalya - Kaş (Deniz/Eğlence),5783
+Kadın,6,Doğa,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Dağ,Villa,12828,Las Vegas - ABD (Gece Hayatı/Eğlence),14598
+Kadın,3,Deniz,Aktif,Tek Kişi,Her Şey Dahil,Havuz,Airbnb,18196,Kenya - Masai Mara Safari (Macera/Orman),16250
+Kadın,6,Macera,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Dağ,Airbnb,3373,Rize - Ayder (Doğa/Orman),3454
+Kadın,5,Deniz,Aktif,Tek Kişi,Yemeksiz,Deniz,Airbnb,25976,Maldivler (Lüks/Ada/Balayı),27173
+Kadın,6,Deniz,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Ada,Bungalov,6259,İzmir - Alaçatı (Eğlence/Gece Hayatı),3809
+Kadın,1,Kültür,Gece Hayatı,Aile (Bebekli),Sadece Kahvaltı,Ada,Otel,16667,Kenya - Masai Mara Safari (Macera/Orman),18261
+Kadın,6,Doğa,Sessiz ve Aktif,Tek Kişi,Sadece Kahvaltı,Ada,Villa,19800,Machu Picchu - Peru (Macera/Kültür),15712
+Kadın,5,Kültür,Gece Hayatı,Balayı,Yemeksiz,Orman,Airbnb,7646,Antalya - Kaş (Deniz/Eğlence),4862
+Kadın,2,Doğa,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Dağ,Airbnb,18785,İsviçre Alpleri (Dağ/Doğa),17419
+Kadın,6,Doğa,Eğlenceli,Aile (Bebekli),Yemeksiz,Deniz,Villa,8054,Amsterdam - Hollanda (Eğlence/Aktif),7606
+Erkek,5,Doğa,Gece Hayatı,Balayı,Her Şey Dahil,Havuz,Airbnb,4537,Bolu - Yedigöller (Doğa/Sessiz),1408
+Kadın,2,Orman,Sessiz,Aile (Bebekli),Her Şey Dahil,Dağ,Otel,17613,Phuket - Tayland (Ada/Aktif),13526
+Erkek,2,Kültür,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Ada,Villa,19734,Kenya - Masai Mara Safari (Macera/Orman),18348
+Kadın,3,Macera,Gece Hayatı,Balayı,Sadece Kahvaltı,Deniz,Bungalov,18209,Phuket - Tayland (Ada/Aktif),13241
+Kadın,2,Orman,Sessiz ve Aktif,Balayı,Sadece Kahvaltı,Deniz,Villa,11226,Mykonos - Yunanistan (Gece Hayatı),11530
+Erkek,4,Kültür,Sessiz,Tek Kişi,Yemeksiz,Deniz,Villa,13349,Las Vegas - ABD (Gece Hayatı/Eğlence),14769
+Kadın,2,Deniz,Aktif,Aile (Çocuksuz),Her Şey Dahil,Havuz,Otel,21752,Norveç Fiyortları (Doğa/Macera),21478
+Erkek,6,Deniz,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Havuz,Villa,22210,Norveç Fiyortları (Doğa/Macera),22185
+Kadın,1,Deniz,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Havuz,Otel,5919,Antalya - Olympos (Doğa/Bungalov),1152
+Erkek,2,Kültür,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Dağ,Airbnb,9841,Antalya - Kaş (Deniz/Eğlence),5405
+Erkek,4,Macera,Sessiz,Aile (Çocuksuz),Sadece Kahvaltı,Dağ,Airbnb,19847,İsviçre Alpleri (Dağ/Doğa),17966
+Erkek,5,Macera,Gece Hayatı,Tek Kişi,Her Şey Dahil,Dağ,Airbnb,17886,Phuket - Tayland (Ada/Aktif),13183
+Kadın,2,Doğa,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Dağ,Bungalov,10401,Mykonos - Yunanistan (Gece Hayatı),11657
+Kadın,1,Orman,Aktif,Tek Kişi,Sadece Kahvaltı,Havuz,Bungalov,22937,İsviçre Alpleri (Dağ/Doğa),19316
+Erkek,5,Deniz,Eğlenceli,Tek Kişi,Her Şey Dahil,Havuz,Bungalov,9690,Santorini - Yunanistan (Deniz/Balayı),10240
+Kadın,5,Orman,Aktif,Balayı,Her Şey Dahil,Ada,Bungalov,4785,Muğla - Fethiye (Deniz/Macera),6485
+Erkek,6,Kültür,Eğlenceli,Arkadaş Grubu,Yemeksiz,Ada,Airbnb,7483,Rize - Ayder (Doğa/Orman),4088
+Kadın,4,Doğa,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Deniz,Otel,6289,Muğla - Fethiye (Deniz/Macera),6249
+Kadın,1,Orman,Eğlenceli,Aile (Bebekli),Sadece Kahvaltı,Ada,Airbnb,30825,Seyşeller (Lüks/Ada),28784
+Kadın,3,Doğa,Aktif,Aile (Çocuksuz),Yemeksiz,Dağ,Otel,18169,Machu Picchu - Peru (Macera/Kültür),15421
+Kadın,6,Macera,Sessiz ve Aktif,Balayı,Yemeksiz,Orman,Villa,18577,Norveç Fiyortları (Doğa/Macera),20420
+Erkek,4,Orman,Sessiz,Aile (Bebekli),Sadece Kahvaltı,Orman,Bungalov,2110,Bolu - Yedigöller (Doğa/Sessiz),2376
+Kadın,4,Doğa,Sessiz,Aile (Çocuksuz),Yemeksiz,Ada,Bungalov,5406,Rize - Ayder (Doğa/Orman),2844
+Erkek,4,Macera,Sessiz ve Aktif,Tek Kişi,Her Şey Dahil,Ada,Bungalov,7596,Antalya - Kaş (Deniz/Eğlence),3806
+Erkek,5,Doğa,Gece Hayatı,Balayı,Her Şey Dahil,Havuz,Villa,20944,Norveç Fiyortları (Doğa/Macera),20285
+Kadın,2,Doğa,Eğlenceli,Balayı,Yemeksiz,Orman,Otel,17456,Machu Picchu - Peru (Macera/Kültür),16391
+Erkek,5,Deniz,Sessiz,Tek Kişi,Her Şey Dahil,Dağ,Airbnb,27483,Maldivler (Lüks/Ada/Balayı),24307
+Kadın,6,Deniz,Sessiz,Tek Kişi,Her Şey Dahil,Dağ,Airbnb,12578,İbiza - İspanya (Gece Hayatı/Deniz),12061
+Kadın,5,Kültür,Sessiz,Balayı,Her Şey Dahil,Orman,Villa,12870,İbiza - İspanya (Gece Hayatı/Deniz),13625
+Kadın,3,Orman,Aktif,Arkadaş Grubu,Her Şey Dahil,Dağ,Villa,3060,Antalya - Kaş (Deniz/Eğlence),3688
+Erkek,4,Doğa,Eğlenceli,Aile (Bebekli),Yemeksiz,Havuz,Airbnb,5900,Nevşehir - Kapadokya (Macera/Balayı),2590
+Erkek,2,Deniz,Gece Hayatı,Aile (Bebekli),Yemeksiz,Dağ,Bungalov,12471,Mykonos - Yunanistan (Gece Hayatı),11913
+Erkek,6,Kültür,Aktif,Balayı,Sadece Kahvaltı,Ada,Airbnb,16009,Santorini - Yunanistan (Deniz/Balayı),11269
+Erkek,4,Kültür,Sessiz,Tek Kişi,Yemeksiz,Dağ,Airbnb,10149,Amsterdam - Hollanda (Eğlence/Aktif),9403
+Erkek,6,Macera,Gece Hayatı,Aile (Bebekli),Yemeksiz,Deniz,Villa,28232,Seyşeller (Lüks/Ada),28010
+Kadın,3,Kültür,Sessiz,Balayı,Sadece Kahvaltı,Dağ,Villa,1741,Rize - Ayder (Doğa/Orman),3364
+Kadın,5,Kültür,Sessiz ve Aktif,Aile (Bebekli),Yemeksiz,Orman,Villa,6254,Muğla - Fethiye (Deniz/Macera),4488
+Kadın,2,Kültür,Eğlenceli,Aile (Çocuksuz),Yemeksiz,Ada,Otel,3602,Bolu - Yedigöller (Doğa/Sessiz),1659
+Kadın,6,Deniz,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Orman,Villa,30479,Maldivler (Lüks/Ada/Balayı),27486
+Kadın,4,Doğa,Eğlenceli,Balayı,Sadece Kahvaltı,Havuz,Villa,6653,Rize - Ayder (Doğa/Orman),3692
+Kadın,5,Macera,Sessiz ve Aktif,Arkadaş Grubu,Her Şey Dahil,Dağ,Villa,1220,Rize - Ayder (Doğa/Orman),2459
+Erkek,1,Doğa,Aktif,Tek Kişi,Yemeksiz,Orman,Otel,27678,Seyşeller (Lüks/Ada),28982
+Erkek,2,Macera,Sessiz ve Aktif,Aile (Bebekli),Sadece Kahvaltı,Orman,Otel,14487,İbiza - İspanya (Gece Hayatı/Deniz),11440
+Kadın,5,Kültür,Eğlenceli,Arkadaş Grubu,Yemeksiz,Havuz,Villa,18651,Norveç Fiyortları (Doğa/Macera),20559
+Erkek,2,Macera,Sessiz ve Aktif,Aile (Bebekli),Her Şey Dahil,Orman,Airbnb,17976,Machu Picchu - Peru (Macera/Kültür),14651
+Erkek,5,Doğa,Aktif,Arkadaş Grubu,Yemeksiz,Havuz,Bungalov,13934,Phuket - Tayland (Ada/Aktif),12902
+Kadın,3,Macera,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Dağ,Villa,7168,Amsterdam - Hollanda (Eğlence/Aktif),7826
+Kadın,6,Macera,Gece Hayatı,Aile (Çocuksuz),Yemeksiz,Deniz,Villa,24851,İsviçre Alpleri (Dağ/Doğa),20418
+Erkek,6,Macera,Gece Hayatı,Tek Kişi,Yemeksiz,Deniz,Villa,14900,Phuket - Tayland (Ada/Aktif),11205
+Kadın,4,Kültür,Aktif,Aile (Çocuksuz),Her Şey Dahil,Orman,Bungalov,25485,Norveç Fiyortları (Doğa/Macera),22044
+Erkek,6,Doğa,Aktif,Tek Kişi,Her Şey Dahil,Deniz,Villa,17498,Machu Picchu - Peru (Macera/Kültür),16399
+Erkek,4,Kültür,Sessiz,Arkadaş Grubu,Her Şey Dahil,Ada,Otel,4595,Antalya - Kaş (Deniz/Eğlence),3437
+Erkek,1,Orman,Eğlenceli,Arkadaş Grubu,Her Şey Dahil,Ada,Bungalov,5679,Nevşehir - Kapadokya (Macera/Balayı),5293
+Kadın,2,Deniz,Aktif,Balayı,Sadece Kahvaltı,Ada,Otel,1539,Antalya - Olympos (Doğa/Bungalov),2921
+Erkek,6,Doğa,Sessiz,Aile (Bebekli),Her Şey Dahil,Orman,Airbnb,12421,Amsterdam - Hollanda (Eğlence/Aktif),10117
+Erkek,5,Deniz,Gece Hayatı,Balayı,Sadece Kahvaltı,Dağ,Otel,1405,Rize - Ayder (Doğa/Orman),2849
+Kadın,4,Deniz,Aktif,Tek Kişi,Yemeksiz,Deniz,Airbnb,15979,İbiza - İspanya (Gece Hayatı/Deniz),11314
+Erkek,5,Doğa,Aktif,Arkadaş Grubu,Her Şey Dahil,Ada,Villa,9658,Amsterdam - Hollanda (Eğlence/Aktif),9032
+Erkek,1,Orman,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Orman,Bungalov,1192,Antalya - Olympos (Doğa/Bungalov),1632
+Erkek,6,Macera,Sessiz,Balayı,Yemeksiz,Havuz,Bungalov,5777,İzmir - Alaçatı (Eğlence/Gece Hayatı),4085
+Erkek,1,Doğa,Sessiz,Aile (Çocuksuz),Yemeksiz,Deniz,Villa,6075,Antalya - Kaş (Deniz/Eğlence),3291
+Kadın,6,Macera,Eğlenceli,Tek Kişi,Her Şey Dahil,Deniz,Otel,17250,Bali - Endonezya (Doğa/Egzotik),14541
+Kadın,1,Kültür,Eğlenceli,Balayı,Yemeksiz,Deniz,Bungalov,16375,Machu Picchu - Peru (Macera/Kültür),14653
+Kadın,6,Kültür,Aktif,Aile (Bebekli),Her Şey Dahil,Dağ,Airbnb,2487,Rize - Ayder (Doğa/Orman),1760
+Erkek,1,Deniz,Sessiz ve Aktif,Balayı,Her Şey Dahil,Ada,Otel,15299,Kenya - Masai Mara Safari (Macera/Orman),15680
+Erkek,5,Orman,Gece Hayatı,Balayı,Sadece Kahvaltı,Deniz,Villa,23037,Norveç Fiyortları (Doğa/Macera),22185
+Erkek,2,Doğa,Aktif,Aile (Çocuksuz),Yemeksiz,Ada,Airbnb,25045,Norveç Fiyortları (Doğa/Macera),22469
+Kadın,2,Kültür,Aktif,Balayı,Her Şey Dahil,Deniz,Otel,18028,Las Vegas - ABD (Gece Hayatı/Eğlence),16312
+Kadın,3,Macera,Gece Hayatı,Aile (Bebekli),Her Şey Dahil,Deniz,Airbnb,3091,Rize - Ayder (Doğa/Orman),4911
+Erkek,3,Macera,Eğlenceli,Aile (Bebekli),Yemeksiz,Havuz,Villa,12311,Amsterdam - Hollanda (Eğlence/Aktif),9323
+Erkek,6,Kültür,Sessiz ve Aktif,Aile (Bebekli),Her Şey Dahil,Havuz,Airbnb,20558,İsviçre Alpleri (Dağ/Doğa),19084
+Kadın,6,Orman,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Ada,Otel,13788,Bali - Endonezya (Doğa/Egzotik),15196
+Kadın,5,Kültür,Aktif,Balayı,Yemeksiz,Dağ,Airbnb,17584,Machu Picchu - Peru (Macera/Kültür),15292
+Kadın,3,Deniz,Gece Hayatı,Tek Kişi,Yemeksiz,Orman,Bungalov,15302,İbiza - İspanya (Gece Hayatı/Deniz),13409
+Kadın,5,Kültür,Sessiz ve Aktif,Arkadaş Grubu,Her Şey Dahil,Deniz,Otel,20117,Kenya - Masai Mara Safari (Macera/Orman),17567
+Kadın,2,Doğa,Aktif,Aile (Bebekli),Yemeksiz,Ada,Villa,8274,Muğla - Fethiye (Deniz/Macera),5192
+Erkek,4,Kültür,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Deniz,Otel,17134,Machu Picchu - Peru (Macera/Kültür),14358
+Erkek,1,Doğa,Aktif,Tek Kişi,Her Şey Dahil,Havuz,Airbnb,7606,Rize - Ayder (Doğa/Orman),3901
+Kadın,2,Deniz,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Deniz,Bungalov,6589,Nevşehir - Kapadokya (Macera/Balayı),4320
+Erkek,4,Kültür,Sessiz ve Aktif,Aile (Çocuksuz),Her Şey Dahil,Orman,Villa,19510,Kenya - Masai Mara Safari (Macera/Orman),18282
+Erkek,4,Doğa,Aktif,Balayı,Sadece Kahvaltı,Dağ,Otel,18854,İsviçre Alpleri (Dağ/Doğa),17321
+Erkek,6,Macera,Sessiz,Aile (Çocuksuz),Yemeksiz,Ada,Villa,19265,Las Vegas - ABD (Gece Hayatı/Eğlence),16141
+Kadın,6,Deniz,Sessiz ve Aktif,Aile (Bebekli),Yemeksiz,Orman,Otel,17346,Kenya - Masai Mara Safari (Macera/Orman),15936
+Kadın,6,Deniz,Gece Hayatı,Aile (Bebekli),Sadece Kahvaltı,Orman,Airbnb,3614,Rize - Ayder (Doğa/Orman),3762
+Kadın,5,Orman,Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Airbnb,31646,Seyşeller (Lüks/Ada),29139
+Kadın,4,Orman,Sessiz,Arkadaş Grubu,Yemeksiz,Ada,Bungalov,3107,Rize - Ayder (Doğa/Orman),3131
+Erkek,5,Kültür,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Deniz,Villa,28302,Maldivler (Lüks/Ada/Balayı),25041
+Kadın,1,Kültür,Eğlenceli,Aile (Bebekli),Sadece Kahvaltı,Deniz,Airbnb,13757,İbiza - İspanya (Gece Hayatı/Deniz),12640
+Erkek,6,Doğa,Aktif,Balayı,Yemeksiz,Havuz,Airbnb,16954,Bali - Endonezya (Doğa/Egzotik),17318
+Erkek,4,Orman,Aktif,Aile (Bebekli),Yemeksiz,Deniz,Otel,6320,Nevşehir - Kapadokya (Macera/Balayı),4677
+Erkek,3,Orman,Aktif,Balayı,Yemeksiz,Deniz,Bungalov,16978,Machu Picchu - Peru (Macera/Kültür),14549
+Erkek,6,Doğa,Aktif,Aile (Bebekli),Her Şey Dahil,Dağ,Otel,16069,Bali - Endonezya (Doğa/Egzotik),17142
+Kadın,1,Doğa,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Havuz,Bungalov,12313,İbiza - İspanya (Gece Hayatı/Deniz),14285
+Erkek,6,Deniz,Aktif,Aile (Bebekli),Sadece Kahvaltı,Deniz,Bungalov,11743,İbiza - İspanya (Gece Hayatı/Deniz),11298
+Kadın,2,Kültür,Aktif,Aile (Bebekli),Sadece Kahvaltı,Orman,Bungalov,5494,Muğla - Fethiye (Deniz/Macera),3102
+Erkek,6,Kültür,Gece Hayatı,Tek Kişi,Sadece Kahvaltı,Deniz,Otel,6567,Muğla - Fethiye (Deniz/Macera),5066
+Kadın,1,Deniz,Gece Hayatı,Tek Kişi,Her Şey Dahil,Orman,Bungalov,20197,Bali - Endonezya (Doğa/Egzotik),15213
+Kadın,1,Macera,Eğlenceli,Aile (Çocuksuz),Her Şey Dahil,Havuz,Bungalov,20099,Bali - Endonezya (Doğa/Egzotik),16971
+Erkek,2,Doğa,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Ada,Villa,5706,Nevşehir - Kapadokya (Macera/Balayı),3204
+Kadın,5,Kültür,Aktif,Aile (Bebekli),Sadece Kahvaltı,Havuz,Airbnb,5653,Muğla - Fethiye (Deniz/Macera),3364
+Erkek,2,Kültür,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Orman,Bungalov,15804,Machu Picchu - Peru (Macera/Kültür),13724
+Kadın,5,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Havuz,Villa,7626,Antalya - Kaş (Deniz/Eğlence),5439
+Kadın,4,Kültür,Aktif,Aile (Bebekli),Sadece Kahvaltı,Deniz,Airbnb,4253,Muğla - Fethiye (Deniz/Macera),4646
+Kadın,2,Doğa,Sessiz,Tek Kişi,Sadece Kahvaltı,Havuz,Villa,14667,Kenya - Masai Mara Safari (Macera/Orman),15279
+Erkek,2,Orman,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Orman,Otel,11012,Phuket - Tayland (Ada/Aktif),12402
+Kadın,3,Macera,Gece Hayatı,Tek Kişi,Her Şey Dahil,Dağ,Otel,16611,Phuket - Tayland (Ada/Aktif),11800
+Kadın,4,Macera,Sessiz,Arkadaş Grubu,Yemeksiz,Ada,Airbnb,6001,Nevşehir - Kapadokya (Macera/Balayı),4341
+Erkek,4,Deniz,Sessiz ve Aktif,Aile (Çocuksuz),Yemeksiz,Ada,Villa,16077,Bali - Endonezya (Doğa/Egzotik),16689
+Erkek,5,Orman,Eğlenceli,Aile (Bebekli),Her Şey Dahil,Dağ,Villa,15505,Machu Picchu - Peru (Macera/Kültür),14074
+Erkek,4,Orman,Aktif,Aile (Bebekli),Her Şey Dahil,Havuz,Otel,7832,Rize - Ayder (Doğa/Orman),3546
+Erkek,4,Kültür,Aktif,Aile (Bebekli),Sadece Kahvaltı,Orman,Bungalov,11465,Mykonos - Yunanistan (Gece Hayatı),13210
+Erkek,4,Kültür,Sessiz ve Aktif,Aile (Bebekli),Sadece Kahvaltı,Dağ,Bungalov,6225,Bolu - Yedigöller (Doğa/Sessiz),3069
+Kadın,2,Macera,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Orman,Otel,15983,Phuket - Tayland (Ada/Aktif),13337
+Erkek,6,Doğa,Aktif,Tek Kişi,Sadece Kahvaltı,Deniz,Otel,17300,İsviçre Alpleri (Dağ/Doğa),18924
+Erkek,4,Kültür,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Villa,5665,İzmir - Alaçatı (Eğlence/Gece Hayatı),3881
+Kadın,6,Doğa,Aktif,Aile (Bebekli),Yemeksiz,Orman,Villa,11160,Mykonos - Yunanistan (Gece Hayatı),12477
+Erkek,6,Macera,Gece Hayatı,Balayı,Her Şey Dahil,Dağ,Airbnb,17206,Kenya - Masai Mara Safari (Macera/Orman),16168
+Kadın,4,Deniz,Gece Hayatı,Aile (Bebekli),Yemeksiz,Ada,Villa,11775,İbiza - İspanya (Gece Hayatı/Deniz),13540
+Kadın,1,Kültür,Gece Hayatı,Aile (Çocuksuz),Her Şey Dahil,Deniz,Otel,13744,Santorini - Yunanistan (Deniz/Balayı),10173
+Erkek,3,Kültür,Aktif,Aile (Çocuksuz),Her Şey Dahil,Havuz,Bungalov,10627,Santorini - Yunanistan (Deniz/Balayı),10869
+Kadın,3,Doğa,Gece Hayatı,Aile (Çocuksuz),Yemeksiz,Deniz,Airbnb,14981,Mykonos - Yunanistan (Gece Hayatı),11642
+Kadın,3,Macera,Sessiz ve Aktif,Tek Kişi,Yemeksiz,Orman,Otel,4245,Bolu - Yedigöller (Doğa/Sessiz),4303
+Kadın,1,Macera,Sessiz,Arkadaş Grubu,Her Şey Dahil,Deniz,Airbnb,7364,Rize - Ayder (Doğa/Orman),4083
+Kadın,3,Orman,Eğlenceli,Tek Kişi,Sadece Kahvaltı,Dağ,Villa,7689,İzmir - Alaçatı (Eğlence/Gece Hayatı),3598
+Erkek,5,Orman,Aktif,Arkadaş Grubu,Sadece Kahvaltı,Orman,Airbnb,6005,Antalya - Kaş (Deniz/Eğlence),4259
+Kadın,6,Kültür,Eğlenceli,Aile (Bebekli),Yemeksiz,Dağ,Villa,4986,Rize - Ayder (Doğa/Orman),1940
+Erkek,4,Doğa,Aktif,Arkadaş Grubu,Her Şey Dahil,Dağ,Otel,30483,Maldivler (Lüks/Ada/Balayı),26804
+Kadın,4,Kültür,Sessiz ve Aktif,Arkadaş Grubu,Sadece Kahvaltı,Dağ,Airbnb,9326,Amsterdam - Hollanda (Eğlence/Aktif),8488
+Kadın,3,Deniz,Gece Hayatı,Tek Kişi,Yemeksiz,Deniz,Villa,27169,Seyşeller (Lüks/Ada),28707
+Kadın,3,Kültür,Sessiz ve Aktif,Arkadaş Grubu,Yemeksiz,Orman,Villa,1425,Bolu - Yedigöller (Doğa/Sessiz),1588
+Kadın,4,Orman,Sessiz,Tek Kişi,Yemeksiz,Havuz,Bungalov,18721,Machu Picchu - Peru (Macera/Kültür),14713
+Erkek,4,Macera,Aktif,Balayı,Sadece Kahvaltı,Ada,Otel,7026,Muğla - Fethiye (Deniz/Macera),3629
+Kadın,1,Orman,Sessiz ve Aktif,Aile (Çocuksuz),Sadece Kahvaltı,Havuz,Bungalov,15219,Machu Picchu - Peru (Macera/Kültür),15526
+Kadın,6,Deniz,Aktif,Aile (Bebekli),Yemeksiz,Ada,Otel,14196,Bali - Endonezya (Doğa/Egzotik),16104
+Kadın,1,Doğa,Eğlenceli,Tek Kişi,Yemeksiz,Deniz,Airbnb,7510,Muğla - Fethiye (Deniz/Macera),3059
+Kadın,5,Orman,Aktif,Aile (Bebekli),Her Şey Dahil,Havuz,Bungalov,15265,Machu Picchu - Peru (Macera/Kültür),13735
+Kadın,1,Kültür,Gece Hayatı,Balayı,Yemeksiz,Havuz,Otel,23735,Maldivler (Lüks/Ada/Balayı),25708
+Erkek,3,Orman,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Orman,Bungalov,14767,İbiza - İspanya (Gece Hayatı/Deniz),12847
+Erkek,2,Macera,Sessiz,Aile (Çocuksuz),Her Şey Dahil,Orman,Otel,17117,Kenya - Masai Mara Safari (Macera/Orman),17737
+Kadın,3,Doğa,Gece Hayatı,Arkadaş Grubu,Yemeksiz,Dağ,Villa,28947,Seyşeller (Lüks/Ada),28728
+Erkek,3,Orman,Sessiz,Tek Kişi,Sadece Kahvaltı,Havuz,Otel,3095,Nevşehir - Kapadokya (Macera/Balayı),4555
+Kadın,1,Doğa,Aktif,Aile (Bebekli),Her Şey Dahil,Deniz,Otel,13233,Santorini - Yunanistan (Deniz/Balayı),9251
+Kadın,1,Deniz,Sessiz ve Aktif,Balayı,Sadece Kahvaltı,Havuz,Otel,16275,Bali - Endonezya (Doğa/Egzotik),14521
